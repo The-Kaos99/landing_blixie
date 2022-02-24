@@ -7,67 +7,128 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS Personalizado -->
+    <link href="/src/css/main.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-dark">
-    
+<body class="bg-body">
     <div class="container-fluid">
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs" id="navId">
-            <li class="nav-item">
-                <a href="#tab1Id" class="nav-link active">Active</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                    aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#tab2Id">Action</a>
-                    <a class="dropdown-item" href="#tab3Id">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#tab4Id">Action</a>
+        <nav class="navbar navbar-expand-sm navbar-light gris fixed-top  scrolling-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="/src/img/logo.svg" alt="Logo" height="65">
+                </a>
+                <button class="navbar-toggler d-xl-none" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Play to Earn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">NFTs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blixies Token</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Roadmap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Abount</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Parteners</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item ">
+                            <a href="holaa" class="nav-link">Conect <i class="fa fa-wallet fa-2x ml-2"></i></a>
+                        </li>
+                    </ul>
                 </div>
-            </li>
-            <li class="nav-item">
-                <a href="#tab5Id" class="nav-link">Another link</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link disabled">Disabled</a>
-            </li>
-        </ul>
+            </div>
+        </nav>
+        <br><br><br><br>
 
-        <!-- Tab panes -->
-        <div class="tab-content">
-            <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
-            <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
-            <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
-            <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
-            <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+        <div class="container-fluid text-light text-center" id="Home">
+            <video id="background-video-home" autoplay loop muted poster="src/img/home-bg.jpeg">
+                <source src="src/video/home-bg.mp4" type="video/mp4">
+            </video>
+            <div class="row pos-text">
+                <div class="col-12">
+                    <h2 class="h1 mt-3 mb-5">Welcome to Blixieverse</h2>
+                    <a href="http://" type="button" class="btn btn-secondary mt-5">Buy Blix</a>
+                </div>
+            </div>
         </div>
+        <div class="container-fluid" id="Play_to_Earn">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="h3">holll</h3>
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+        </div>
+        <div class="container-fluid" id="NFTs">
+            
+        </div>
+        <div class="container-fluid" id="Blixies_Token">
 
-        <script>
-            $('#navId a').click(e => {
-                e.preventDefault();
-                $(this).tab('show');
-            });
-        </script>
+        </div>
+        <div class="container-fluid" id="Roadmap">
 
+        </div>
+        <div class="container-fluid" id="Abount">
+
+        </div>
+        <div class="container-fluid" id="Parteners">
+
+        </div>
+        <div class="container-fluid" id="FAQ">
+
+        </div>
     </div>
-    
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>ghjfghhj</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- MDB -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 </body>
 
 </html>

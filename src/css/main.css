@@ -1,0 +1,38 @@
+.gris {
+    background: linear-gradient(to bottom right, #addafb86, #f580ff86);
+}
+
+.top-nav-collapse {
+    background: linear-gradient(to bottom right, #addafb, #f580ff) !important;
+}
+
+
+.bg-body {
+
+    background: linear-gradient(to bottom right, #addafb63, #f580ff63);
+}
+
+/**/
+#Home {
+
+    width: auto;
+    height:500px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+#background-video-home {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -99;
+}
+
+
