@@ -1,3 +1,4 @@
+/*nav*/
 .gris {
     background: linear-gradient(to bottom right, #addafb86, #f580ff86);
 }
@@ -6,13 +7,14 @@
     background: linear-gradient(to bottom right, #addafb, #f580ff) !important;
 }
 
-
+/*del body*/
 .bg-body {
 
     background: linear-gradient(to bottom right, #addafb63, #f580ff63);
+    position: relative; /*para que se referencia padre del menu lateral*/
 }
 
-/**/
+/* div sección del video*/
 .home-vi {
 
     width: auto;
@@ -22,7 +24,7 @@
 
 }
 
-
+/*el video*/
 #background-video-home {
     width: 100%;
     height: 550px;
@@ -34,5 +36,27 @@
     bottom: 0;
     z-index: -99;
 }
+/* MENU LATERAL*/
 
+div.menu_lateral{
+    border:1px solid blue;
+   /* width: 50px;*/
+    position: fixed;
+    right:0px;
+    top: 200px;
+    /*background-color: white;*/
+    background: linear-gradient(to bottom right, #addafb, #f580ff);
+    border-radius: 15px;
+}
+.menu_lateral ul{
+    border:1px solid red;
+    list-style: none;
+    padding: 5px;
+    margin-bottom: 0px;
+}
 
+@media screen and (max-width : 575px){
+    div.menu_lateral{
+        width: 100px;
+    } 
+}

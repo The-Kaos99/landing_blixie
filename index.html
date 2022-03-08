@@ -73,17 +73,31 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">FAQ</a>
                         </li>
+                        
                     </ul>
+                    <!--
                     <ul class="navbar-nav nav-flex-icons">
                         <li class="nav-item ">
                             <a href="holaa" class="nav-link">Conect <i class="fa fa-wallet fa-2x ml-2"></i></a>
                         </li>
                     </ul> 
+                    -->
                 </div><!-- collapse navbar-collapse, menu-->
                 
             </div> <!--container -->
         </nav>
         <br><br><br><br>
+        
+        <div class="menu_lateral">
+            <ul>
+            <li><a href="#"><img src="src/img/instagram_i.png" width="50px"/></a></li> 
+            <li><a href="#"><img src="src/img/instagram_i.png" width="50px"/></a></li>
+            <li><a href="#"><img src="src/img/instagram_i.png" width="50px"/></a></li> 
+            <li><a href="#"><img src="src/img/instagram_i.png" width="50px"/></a></li>
+            <li><a href="#"><img src="src/img/instagram_i.png" width="50px"/></a></li>  
+            </ul>
+        </div> 
+        
     </div> <!-- container-fluid, barra de menu -->
     
     <!--seccion del video -->
@@ -112,6 +126,10 @@
             
         </div><!--home-vi --> 
     </div><!--container-fluid, seccion del video -->
+    <div>
+        <p id="mensaje">estado de la hamburguesa</p>
+    </div>
+    
     
     <!-- Resto de secciones-->
     <div class="container-fluid" id="NFTs">
@@ -142,6 +160,21 @@
             </div>
         </div>
     </div>
+    <script>
+        let caja=document.getElementById("mensaje");
+        
+        window.addEventListener('resize', mensaje);
+        
+        function mensaje(){
+            caja.innerHTML=window.innerWidth; //tmb se puede usar document.documentElement.clientWidth
+        }
+        
+        //obtener ancho actual de la página
+        /*
+        let ancho= window.innerWidth;
+        caja.innerHTML=ancho; */
+        
+    </script>
 
     <!-- MDB -->
     <!-- JQuery -->
