@@ -39,7 +39,6 @@
 /* MENU LATERAL*/
 
 div.menu_lateral{
-    border:1px solid blue;
    /* width: 50px;*/
     position: fixed;
     right:0px;
@@ -47,16 +46,36 @@ div.menu_lateral{
     /*background-color: white;*/
     background: linear-gradient(to bottom right, #addafb, #f580ff);
     border-radius: 15px;
+    
+    display: block;
 }
 .menu_lateral ul{
-    border:1px solid red;
     list-style: none;
     padding: 5px;
     margin-bottom: 0px;
 }
-
+/*
 @media screen and (max-width : 575px){
     div.menu_lateral{
         width: 100px;
+        
     } 
+} */
+/*menu laterla en pos horizontal*/
+div.menu_lateral_h{
+    text-align: center;
+    display: none; /*valor= visible, por javascript*/
+}
+div.menu_lateral_h ul{
+    margin:0;
+    padding:0;
+}
+.menu_lateral_h ul li{
+    /*
+    display:block;
+    float:left;
+    padding:0 5px;
+    */
+    display: inline; /*valor= inline, por javascript*/
+    margin-left: 10px;
 }

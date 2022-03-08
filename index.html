@@ -48,7 +48,7 @@
                 </button>
                 <!--Menu -->
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="menuH">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
@@ -72,6 +72,18 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                        <!-- Provando a añadir un div -->
+                        <li>
+                            <div class="menu_lateral_h">
+                                <ul>
+                                <li><a href="#"><img src="src/img/instagram_i.png" width="30px"/></a></li> 
+                                <li><a href="#"><img src="src/img/instagram_i.png" width="30px"/></a></li>
+                                <li><a href="#"><img src="src/img/instagram_i.png" width="30px"/></a></li> 
+                                <li><a href="#"><img src="src/img/instagram_i.png" width="30px"/></a></li>
+                                <li><a href="#"><img src="src/img/instagram_i.png" width="30px"/></a></li>  
+                                </ul>
+                            </div>
                         </li>
                         
                     </ul>
@@ -161,12 +173,28 @@
         </div>
     </div>
     <script>
+        //Cogiendo referencias
         let caja=document.getElementById("mensaje");
+        let menuLH= document.querySelector(".menu_lateral_h");
+        let menuLa=document.querySelector(".menu_lateral");
         
+        //evento al cambiar el ancho de la ventana
         window.addEventListener('resize', mensaje);
         
         function mensaje(){
             caja.innerHTML=window.innerWidth; //tmb se puede usar document.documentElement.clientWidth
+           
+            
+            //que se visible el menu lateral h
+            if(window.innerWidth<575){
+                caja.innerHTML=menuLH;
+                menuLH.style.display="inline";
+                menuLa.style.display="none";
+            }
+            else{
+                menuLH.style.display="none";
+                menuLa.style.display="block";
+            }
         }
         
         //obtener ancho actual de la página
