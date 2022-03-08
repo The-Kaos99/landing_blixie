@@ -47,7 +47,7 @@ div.menu_lateral{
     background: linear-gradient(to bottom right, #addafb, #f580ff);
     border-radius: 15px;
     
-    display: block;
+    display:none;
 }
 .menu_lateral ul{
     list-style: none;
@@ -61,10 +61,11 @@ div.menu_lateral{
         
     } 
 } */
+/*Ambos menus serán invisibles por defecto*/
 /*menu laterla en pos horizontal*/
 div.menu_lateral_h{
     text-align: center;
-    display: none; /*valor= visible, por javascript*/
+    display: none; /*valor= block, por javascript*/
 }
 div.menu_lateral_h ul{
     margin:0;
@@ -76,6 +77,6 @@ div.menu_lateral_h ul{
     float:left;
     padding:0 5px;
     */
-    display: inline; /*valor= inline, por javascript*/
+    display: inline;
     margin-left: 10px;
 }

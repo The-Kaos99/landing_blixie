@@ -178,6 +178,17 @@
         let menuLH= document.querySelector(".menu_lateral_h");
         let menuLa=document.querySelector(".menu_lateral");
         
+        //por defecto, tiene que efectuarse una vez al cargarse la página. podría llamarmo justo al cargar
+        if(window.innerWidth<575){
+                caja.innerHTML=menuLH;
+                menuLH.style.display="inline";
+                menuLa.style.display="none";
+        }
+        else{
+                menuLH.style.display="none";
+                menuLa.style.display="block";
+        } 
+        
         //evento al cambiar el ancho de la ventana
         window.addEventListener('resize', mensaje);
         
@@ -195,7 +206,9 @@
                 menuLH.style.display="none";
                 menuLa.style.display="block";
             }
-        }
+        } 
+        
+        
         
         //obtener ancho actual de la página
         /*
