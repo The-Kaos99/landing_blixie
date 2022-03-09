@@ -1,3 +1,11 @@
+
+
+/* Ocultar la bara de scroll pero que siga funcionando el del raton */
+::-webkit-scrollbar {
+    display: none;
+}
+
+
 /*nav*/
 .gris {
     /*opacidad 86, añadir 2 digitos*/
