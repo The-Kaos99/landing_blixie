@@ -38,10 +38,15 @@
 }
 
 .btn-secondary{
+    /*
     -webkit-border-radius: 20px !important;
     -moz-border-radius: 20px !important;
-    border-radius: 20px !important;
+    border-radius: 20px !important; */
     
+    -webkit-border-radius: 24px;   
+    -moz-border-radius: 24px;   
+    border-radius: 24px;   
+    -webkit-box-shadow: 0 2px 5px #19748f;
 }
 /* MENU LATERAL*/
 
