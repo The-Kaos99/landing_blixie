@@ -62,7 +62,7 @@ div.menu_lateral{
    /* width: 50px;*/
     position: fixed;
     right:0px;
-    top: 200px;
+    top: 170px;
     /*background-color: white;*/
     background: linear-gradient(to bottom right, #addafb, #f580ff);
     border-radius: 15px;
@@ -73,6 +73,9 @@ div.menu_lateral{
     list-style: none;
     padding: 5px;
     margin-bottom: 0px;
+}
+.menu_lateral ul li{
+    margin-bottom: 10px;
 }
 /*
 @media screen and (max-width : 575px){
@@ -99,6 +102,7 @@ div.menu_lateral_h ul{
     */
     display: inline;
     margin-left: 10px;
+    
 }
 
 /* ____moviendo los divs de los botones*/
