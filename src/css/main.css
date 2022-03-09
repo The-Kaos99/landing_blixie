@@ -97,18 +97,34 @@ div.menu_lateral_h ul{
 /* ____moviendo los divs de los botones*/
 #btns_superiores{
     border: 1px solid green;
-    
-    margin-top: 100px; 
+    margin-top: 60px; 
+    height: 45%;
 }
 
 #btns_inferiores{
     
     border:1px solid red;
+    padding-top: 33px;/*2.3%;*/
     
 }
 
 .btn_buyBlix{
     border:1px solid black;
     /*margin-top: 120px;  no va*/
-    padding-top: 130px;
+    padding-top:120px;/*120px;/*12%;*/
+    
+}
+/*adaptar la posicion del boton byBlix en fucnión del subtitulo, welcome...*/
+@media screen and (max-width : 432px){
+    .btn_buyBlix{
+    /*margin-top: 120px;  no va*/
+    padding-top:80px;/*120px;/*12%;*/
+    
+    }
+}
+
+.btn_test{
+    background-color: mediumpurple;
+    border-radius: 18px;
+    color:white;
 }

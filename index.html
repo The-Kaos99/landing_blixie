@@ -143,6 +143,13 @@
         </div><!--home-vi --> 
     </div><!--container-fluid, seccion del video -->
     <div>
+        <a href="http://" type="button" class="btn btn-secondary mt-5">Whitepaper</a>
+        
+        <a href="http://" type="button" class="btn btn_test" >Whitepaper 2</a>
+        <a href="http://" type="button" class=" btn_test" >Whitepaper 3</a>
+        
+        <a href="#" ><button type="button" class="btn_test" > whitepeaper bu</button></a>
+        
         <p id="mensaje">Mensaje de prueba</p>
     </div>
     
@@ -198,7 +205,8 @@
         
         function mensaje(){
             //caja.innerHTML=window.innerWidth; //tmb se puede usar document.documentElement.clientWidth
-           
+           //console.log(window.innerWidth);
+         
             
             //que se visible el menu lateral h
             if(window.innerWidth<575){
@@ -212,19 +220,22 @@
             }
         } 
         
+        /*cambiar la ps de los botones cuando cambie el tamaño del contenedor*/
         
+        let btns_sup= document.querySelector("#btns_superiores");
+        //caja.innerHTML=btns_sup.style.marginTop;
+        
+        /*
         console.log("Vertical: " + window.scrollY);
         
         /*HTMLBodyElement.scrollTop=0;*/
-        console.log("Vertical b: " + document.body.scrollTop);
+        /*console.log("Vertical b: " + document.body.scrollTop); */
         /*
         window.onscroll = function() {
           console.log("Vertical: " + window.scrollY);
           console.log("Horizontal: " + window.scrollX);
 
         }; */
-        
-        
         
         //obtener ancho actual de la página
         /*
