@@ -188,14 +188,14 @@
         </div>
     </div>
     <script>
-        //Cogiendo referencias
+        //__Cogiendo referencias
         let caja=document.getElementById("mensaje");
         let menuLH= document.querySelector(".menu_lateral_h");
         let menuLa=document.querySelector(".menu_lateral");
         
-        //por defecto, tiene que efectuarse una vez al cargarse la página. podría llamarmo justo al cargar
+        //por defecto, tiene que efectuarse una vez al cargarse la página. podría llamarlo justo al cargar
         if(window.innerWidth<575){
-                caja.innerHTML=menuLH;
+                //caja.innerHTML=menuLH;
                 menuLH.style.display="inline";
                 menuLa.style.display="none";
         }
@@ -204,7 +204,7 @@
                 menuLa.style.display="block";
         } 
         
-        //evento al cambiar el ancho de la ventana
+        //__EVENTO al cambiar el ancho de la ventana
         window.addEventListener('resize', mensaje);
         
         function mensaje(){
@@ -224,9 +224,9 @@
             }
         } 
         
-        /*cambiar la ps de los botones cuando cambie el tamaño del contenedor*/
+        /*cambiar la ps de los botones cuando cambie el tamaño del contenedor. n*/
         
-        let btns_sup= document.querySelector("#btns_superiores");
+        //let btns_sup= document.querySelector("#btns_superiores");
         //caja.innerHTML=btns_sup.style.marginTop;
         
         /*
