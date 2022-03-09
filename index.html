@@ -111,20 +111,22 @@
             </ul>
         </div> 
         
-         <br><br><br><br>
+        <!-- <br><br><br><br>-->
+        <!-- bloque de espacio -->
+        
     </div> <!-- container-fluid, barra de menu -->
     
     <!--seccion del video -->
     <div class="container-fluid text-light text-center px-0" id="Home">
         <div class="home-vi">
-            <video id="background-video-home" loop muted autoplay poster="src/img/home-bg.jpeg" >
-                    <source src="src/video/home-bg.mp4" type="video/mp4"> <!--autoplay -->
+            <video id="background-video-home" loop muted  poster="src/img/home-bg.jpeg" > <!--autoplay -->
+                    <source src="src/video/home-bg.mp4" type="video/mp4"> 
             </video>
             
             <!-- boton superior-->   
             <div class="row pos-text" id="btns_superiores">
                     <div class="col-12"> 
-                        <h1 class="h1 mt-3 mb-5 subtitle">Wellcome to Blixieverse</h1>
+                        <h1 class="h1 mt-3 mb-3 subtitle">Wellcome to Blixieverse</h1>
                         <div class="mt-5 btn_buyBlix">
                             
                             <a href="#" ><button type="button" class="btn btn-secondary btn-rounded mt-5">Buy BLIX</button></a>
@@ -187,16 +189,24 @@
         let caja=document.getElementById("mensaje");
         let menuLH= document.querySelector(".menu_lateral_h");
         let menuLa=document.querySelector(".menu_lateral");
-        
+        let espaciado= document.querySelector(".espaciado");
         //por defecto, tiene que efectuarse una vez al cargarse la página. podría llamarlo justo al cargar
         if(window.innerWidth<575){
-                //caja.innerHTML=menuLH;
-                menuLH.style.display="inline";
-                menuLa.style.display="none";
+            //caja.innerHTML=menuLH;
+            menuLH.style.display="inline";
+            menuLa.style.display="none";
+            espaciado.style.height="90px";
         }
         else{
-                menuLH.style.display="none";
-                menuLa.style.display="block";
+            menuLH.style.display="none";
+            menuLa.style.display="block";
+            //espaciado.style.height="100px";
+            /*
+            if(window.innerWidth<768){
+                espaciado.style.height="120px";
+            }else{
+                espaciado.style.height="100px";
+            }*/
         } 
         
         //__EVENTO al cambiar el ancho de la ventana
@@ -212,13 +222,24 @@
                 //caja.innerHTML=menuLH;
                 menuLH.style.display="inline";
                 menuLa.style.display="none";
+                espaciado.style.height="90px";
             }
             else{
                 menuLH.style.display="none";
                 menuLa.style.display="block";
+                //espaciado.style.height="100px";
+                
+                /*
+                if(window.innerWidth<768){
+                espaciado.style.height="120px";
+                    
+                }else{
+                espaciado.style.height="100px";
+                } */
             }
         } 
         
+        console.log();
         /*cambiar la ps de los botones cuando cambie el tamaño del contenedor. n*/
         
         //let btns_sup= document.querySelector("#btns_superiores");

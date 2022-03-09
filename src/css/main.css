@@ -1,6 +1,7 @@
 /*nav*/
 .gris {
-    background: linear-gradient(to bottom right, #addafb86, #f580ff86);
+    /*opacidad 86, añadir 2 digitos*/
+    background: linear-gradient(to bottom right, #addafb, #f580ff);
 }
 
 .top-nav-collapse {
@@ -54,6 +55,7 @@
 
 .subtitle{
     font-size: 55px;
+    margin-top: 180px !important;
 }
 
 /* __MENU LATERAL__*/
@@ -104,7 +106,10 @@ div.menu_lateral_h ul{
     margin-left: 10px;
     
 }
-
+/*
+.espaciado{
+    height: 100px;
+} */
 /* ____moviendo los divs de los botones*/
 #btns_superiores{
     margin-top: 60px; 
@@ -119,20 +124,15 @@ div.menu_lateral_h ul{
 
 .btn_buyBlix{
     /*margin-top: 120px;  no va*/
-    padding-top:120px;/*120px;/*12%;*/
+    padding-top:30px;/*120px;/*12%;*/
     
 }
-/*adaptar la posicion del boton byBlix en fucnión del subtitulo, welcome...*/
+/*Adaptar la posicion del boton byBlix en fucnión del subtitulo, welcome...*/
 @media screen and (max-width : 600px){
     .btn_buyBlix{
     /*margin-top: 120px;  no va*/
-    padding-top:80px;/*120px;/*12%;*/
+    padding-top:0px;/*120px;/*12%;*/
     
     }
 }
 
-.btn_test{
-    background-color: mediumpurple;
-    border-radius: 18px;
-    color:white;
-}
