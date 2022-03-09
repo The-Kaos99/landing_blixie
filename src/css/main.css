@@ -36,6 +36,11 @@
     bottom: 0;
     z-index: -99;
 }
+
+.btn-secondary{
+    border-radius: 20px !important;
+    
+}
 /* MENU LATERAL*/
 
 div.menu_lateral{
