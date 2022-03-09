@@ -21,7 +21,8 @@
     height:750px;
     overflow: hidden;
     position: relative;
-
+    /*margin-top: 100px;*/
+    
 }
 
 /*el video*/
@@ -46,9 +47,9 @@
     -webkit-border-radius: 24px;   
     -moz-border-radius: 24px;   
     border-radius: 24px;   
-    -webkit-box-shadow: 0 2px 5px #19748f;
+    -webkit-box-shadow: 0 2px 5px #19748f; 
 }
-/* MENU LATERAL*/
+/* __MENU LATERAL__*/
 
 div.menu_lateral{
    /* width: 50px;*/
@@ -91,4 +92,23 @@ div.menu_lateral_h ul{
     */
     display: inline;
     margin-left: 10px;
+}
+
+/* ____moviendo los divs de los botones*/
+#btns_superiores{
+    border: 1px solid green;
+    
+    margin-top: 100px; 
+}
+
+#btns_inferiores{
+    
+    border:1px solid red;
+    
+}
+
+.btn_buyBlix{
+    border:1px solid black;
+    /*margin-top: 120px;  no va*/
+    padding-top: 130px;
 }

@@ -39,7 +39,7 @@
                 <a class="navbar-brand" href="#">
                     <img src="src/img/logo.svg" alt="Logo" height="65">
                 </a>
-                <!--Hamburuesa -->
+                <!--Hamburuesa --> 
                 <button class="navbar-toggler d-xl-none" type="button" data-toggle="collapse"
                     data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -97,7 +97,7 @@
                 
             </div> <!--container -->
         </nav>
-        <br><br><br><br>
+       
         
         <div class="menu_lateral">
             <ul>
@@ -109,6 +109,7 @@
             </ul>
         </div> 
         
+         <br><br><br><br>
     </div> <!-- container-fluid, barra de menu -->
     
     <!--seccion del video -->
@@ -117,19 +118,23 @@
             <video id="background-video-home" loop muted poster="src/img/home-bg.jpeg">
                     <source src="src/video/home-bg.mp4" type="video/mp4"> <!--autoplay -->
             </video>
+            
             <!-- boton superior-->   
-            <div class="row pos-text">
-                    <div class="col-12">
+            <div class="row pos-text" id="btns_superiores">
+                    <div class="col-12"> 
                         <h2 class="h1 mt-3 mb-5">Welcome to Blixieverse</h2>
-                        <div class="mt-5">
+                        <div class="mt-5 btn_buyBlix">
                             <a href="http://" type="button" class="btn btn-secondary mt-5">Buy Blix</a>
                         </div>
+                        <!--
                         <br class="mt-5"><br class="mt-5"><br class="mt-5"><br class="mt-5"><br class="mt-5">
+                        -->
                     </div>
             </div>
+            
             <!--botones inferiores --> 
-            <div class="row mt-5">
-                <div class="col-12 mt-5">
+            <div class="row mt-5" id="btns_inferiores">
+                <div class="col-12 mt-4">
                     <a href="http://" type="button" class="btn btn-secondary mt-5">Whitepaper</a>
                     <a href="http://" type="button" class="btn btn-secondary mt-5">The Proyect</a>
                 </div>
@@ -206,6 +211,18 @@
                 menuLa.style.display="block";
             }
         } 
+        
+        
+        console.log("Vertical: " + window.scrollY);
+        
+        /*HTMLBodyElement.scrollTop=0;*/
+        console.log("Vertical b: " + document.body.scrollTop);
+        /*
+        window.onscroll = function() {
+          console.log("Vertical: " + window.scrollY);
+          console.log("Horizontal: " + window.scrollX);
+
+        }; */
         
         
         
