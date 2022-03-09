@@ -38,6 +38,8 @@
 }
 
 .btn-secondary{
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
     border-radius: 20px !important;
     
 }

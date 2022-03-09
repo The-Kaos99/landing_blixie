@@ -114,7 +114,7 @@
     <!--seccion del video -->
     <div class="container-fluid text-light text-center px-0" id="Home">
         <div class="home-vi">
-            <video id="background-video-home" loop muted autoplay poster="src/img/home-bg.jpeg">
+            <video id="background-video-home" loop muted poster="src/img/home-bg.jpeg">
                     <source src="src/video/home-bg.mp4" type="video/mp4"> <!--autoplay -->
             </video>
             <!-- boton superior-->   
@@ -138,7 +138,7 @@
         </div><!--home-vi --> 
     </div><!--container-fluid, seccion del video -->
     <div>
-        <p id="mensaje">estado de la hamburguesa</p>
+        <p id="mensaje">Mensaje de prueba</p>
     </div>
     
     
@@ -192,12 +192,12 @@
         window.addEventListener('resize', mensaje);
         
         function mensaje(){
-            caja.innerHTML=window.innerWidth; //tmb se puede usar document.documentElement.clientWidth
+            //caja.innerHTML=window.innerWidth; //tmb se puede usar document.documentElement.clientWidth
            
             
             //que se visible el menu lateral h
             if(window.innerWidth<575){
-                caja.innerHTML=menuLH;
+                //caja.innerHTML=menuLH;
                 menuLH.style.display="inline";
                 menuLa.style.display="none";
             }
