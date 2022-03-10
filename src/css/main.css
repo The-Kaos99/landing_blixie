@@ -14,6 +14,7 @@
 
 .top-nav-collapse {
     background: linear-gradient(to bottom right, #addafb, #f580ff) !important;
+    height: 15vh !important;
 }
 
 /*del body*/
@@ -175,16 +176,20 @@ div.menu_lateral_h ul{
     border: rgb(255, 179, 0) 5px dotted;
 }
 
+.content_seccion{ /* Estable esls margen poara que el menu nop se coma parte de las secciones */ 
+    margin-top: 10vh;
+}
+
 
 /*_Aplicando scroll_snap*/
 .snap_container{
   height: 100vh;
   overflow: auto;
- /* scroll-snap-type: y mandatory;*/
+ /* */scroll-snap-type: y mandatory;
 }
 
 #Home, #Play_to_Earn,#NFTs, #Blix_Token, #Roadmap,#About, #Parteners, #FAQ{
-   /*scroll-snap-align: start;*/
+   /**/scroll-snap-align: start;
 
 } 
 
@@ -192,8 +197,8 @@ div.menu_lateral_h ul{
 /*__Seccion PLAY YO EARN*/
 
 #Play_to_Earn div.row{
-    margin-top: 16vh;
-    border: 1px solid green;
+  /*  margin-top: 16vh;
+    border: 1px solid green;*/
 }
 #Play_to_Earn video{
     height: 55vh;
