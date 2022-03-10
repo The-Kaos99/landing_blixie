@@ -194,7 +194,7 @@ div.menu_lateral_h ul{
 } 
 
 
-/*__Seccion PLAY YO EARN*/
+/*__Seccion PLAY TO EARN*/
 
 #Play_to_Earn div.row{
   /*  margin-top: 16vh;
@@ -204,3 +204,16 @@ div.menu_lateral_h ul{
     height: 55vh;
 }
 
+.bloque_aV{
+    /*es el elemento padre de lo que se quiere alinear, un div*/
+    display: grid;
+    place-items: center;
+    display: flex;
+    padding-right: 10%;
+}
+.btn-primary{
+    -webkit-border-radius: 24px;   
+    -moz-border-radius: 24px;   
+    border-radius: 24px;   
+    -webkit-box-shadow: 0 2px 5px #19748f;
+}
