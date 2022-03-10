@@ -180,12 +180,12 @@ div.menu_lateral_h ul{
 .snap_container{
   height: 100vh;
   overflow: auto;
-  /*scroll-snap-type: y mandatory;*/
+  scroll-snap-type: y mandatory;
 }
 
 #Home, #Play_to_Earn,#NFTs, #Blix_Token, #Roadmap,#About, #Parteners, #FAQ{
-   /* scroll-snap-align: start;*/
-    
+   scroll-snap-align: start;
+
 } 
 
 
@@ -197,7 +197,7 @@ div.menu_lateral_h ul{
     height: 55vh;
 }
 
-.background-video-PlayToEarn{
+.background-video-PlayToEarn{ /*igual que el background-video.-home*/
     width: 100vw;
     height: 75vh;
     object-fit: cover;
@@ -207,4 +207,17 @@ div.menu_lateral_h ul{
     top: 0;
     bottom: 0;
     z-index: -99;
+}
+.sec2_video{ /*para el margen sup de cada seccion*/
+    /*estilo igual al home-vi, a excepción del height*/
+    width: auto;
+    height:70vh;
+    overflow: hidden;
+    position: relative;
+    
+    margin-top: 15vh;
+    /*border: 1px solid red;*/
+}
+.sec_Bu{
+    /*border: 1px solid green;*/
 }
