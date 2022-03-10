@@ -116,11 +116,13 @@
         
     </div> <!-- container-fluid, barra de menu -->
     
+    
+<div class="snap_container"><!--Contenedor de todas las secciones-->
     <!--seccion del video -->
-    <div class="container-fluid text-light text-center px-0" id="Home">
+    <div class="container-fluid text-light text-center px-0 " id="Home">
         <div class="home-vi">
-            <video id="background-video-home" loop muted  poster="src/img/home-bg.jpeg" autoplay > <!--autoplay -->
-                    <source src="src/video/home-bg.mp4" type="video/mp4"> 
+            <video id="background-video-home" loop muted  poster="src/img/home-bg.jpeg" > <!--autoplay -->
+                    <source src="src/video/home-bg.mp4" type="video/mp4" /> 
             </video>
             
             <!-- boton superior-->   
@@ -148,13 +150,13 @@
             
         </div><!--home-vi --> 
     </div><!--container-fluid, seccion del video -->
-    <div>
-        <!--<p id="mensaje">Mensaje de prueba</p>-->
-    </div>
+    <!--<div>
+        <p id="mensaje">Mensaje de prueba</p>
+    </div> -->
     
     
     <!-- Resto de secciones-->
-    <div class="container-fluid" id="Play_to_Earn">
+    <div class="container-fluid " id="Play_to_Earn">
         <div class="row text-center">
             <div class="col-12">
                 <h2 class="h1 mt-3 mb-3">Play to Earn</h2>
@@ -162,7 +164,7 @@
         </div>
     </div>
 
-    <div class="container-fluid" id="NFTs">
+    <div class="container-fluid " id="NFTs">
         <div class="row text-center" >
             <div class="col-12"> 
                 <h2 class="h1 mt-3 mb-3">NFTs</h2> 
@@ -171,7 +173,7 @@
     </div>
     
     
-    <div class="container-fluid" id="Blix_Token">
+    <div class="container-fluid " id="Blix_Token">
         <div class="row text-center" >
             <div class="col-12"> 
                 <h2 class="h1 mt-3 mb-3">BLIX Token</h2> 
@@ -198,7 +200,7 @@
     <div class="container-fluid" id="Parteners">
         <div class="row text-center" >
             <div class="col-12"> 
-                <h2 class="h1 mt-3 mb-3">Parteners</h2> 
+                <h2 class="h1 mt-3 mb-3">Partners</h2> 
             </div>
         </div>
     </div>
@@ -210,7 +212,8 @@
             </div>
         </div>
     </div>
- 
+</div> <!-- snap_container -->
+    
     <script>
         //__Cogiendo referencias
         let caja=document.getElementById("mensaje");
@@ -266,7 +269,7 @@
             }
         } 
         
-        console.log();
+        
         /*cambiar la ps de los botones cuando cambie el tamaño del contenedor. n*/
         
         //let btns_sup= document.querySelector("#btns_superiores");

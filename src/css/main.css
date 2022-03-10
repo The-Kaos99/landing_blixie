@@ -87,13 +87,7 @@ div.menu_lateral{
 .menu_lateral ul li{
     margin-bottom: 10px;
 }
-/*
-@media screen and (max-width : 575px){
-    div.menu_lateral{
-        width: 100px;
-        
-    } 
-} */
+
 /*Ambos menus serán invisibles por defecto*/
 /*menu laterla en pos horizontal*/
 div.menu_lateral_h{
@@ -115,10 +109,7 @@ div.menu_lateral_h ul{
     
 }
 
-/*
-.espaciado{
-    height: 100px;
-} */
+
 /* ____moviendo los divs de los botones*/
 #btns_superiores{
     margin-top: 5vh; 
@@ -134,7 +125,7 @@ div.menu_lateral_h ul{
 
 .btn_buyBlix{
     /*margin-top: 120px;  no va
-    padding-top:1vh;/*120px;/*12%;*/*/
+    padding-top:1vh;/*120px;/*12%;*/
     
 }
 /*Adaptar la posicion del boton byBlix en fucnión del subtitulo, welcome...*/
@@ -183,4 +174,16 @@ div.menu_lateral_h ul{
     border: rgb(255, 179, 0) 5px dotted;
 }
 
+
+/*_Aplicando scroll_snap*/
+.snap_container{
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+
+#Home, #Play_to_Earn,#NFTs, #Blix_Token, #Roadmap,#About, #Parteners, #FAQ{
+    scroll-snap-align: start;
+    
+} 
 

@@ -1,0 +1,74 @@
+/*
+.snap-container { /*div padre*/
+    /*height: 100vh; /*100vh;*/
+    /*overflow: auto;  
+    scroll-snap-type: y mandatory; */
+    /* con y, marcamos el scroll vertical. mandatory, que la página se mueva hasta el principio de la sección siguiente o anterior, según hacemos scroll hacia abajo o hacia arriba. 
+    También podemos usar, proximity, que hará que no nos desplacemos hasta la sección siguiente o anterior hasta que no estemos muy próximos al principio de dicha sección. 
+    */
+    /*border: 1px solid green;
+  } 
+
+.snap-section { /*div hijo*/
+    /*scroll-snap-align: start;*/
+    /*min-height: 96vh;/*60vh;*/
+    
+    /* con snap align: designaremos en que punto que el desplazamiento se pare. valor start, se parará justo al inicio de la sección. También podemos usar, center/end, para quedarnos en el centro o final de la sección.
+    La altura de la sección la hemos marcado en vh o altura del viewport.
+    */
+    /*border: 1px solid orange;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.snap-container {
+  height: 100vh;
+  overflow: auto;  
+  scroll-snap-type: y mandatory;  
+}
+
+.snap-section {
+  text-align: center;
+  /*padding: 200px 300px 0 300px;/*rellena toda la pantalla con los paddings*/
+  /*padding: 100px 100px 100px 100px;*/
+  scroll-snap-align: start;
+  height: 100vh;/*min-height: 100vh;/*60vh; */ 
+    
+  border:1px solid black;
+}
+
+.snap-section:nth-child(1) {
+  background: #556270;
+}
+
+.snap-section:nth-child(2) {
+  background: #4ecdc4;
+}
+
+.snap-section:nth-child(3) {
+  background: #c7f464;
+}
+
+.snap-section:nth-child(4) {
+  background: #ff6b6b;
+}
+
+.snap-section:nth-child(5) {
+  background: #c44d58;
+}
+
+.snap-section h3 {
+  font-family: 'Pacifico', cursive;
+  font-size: 52px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.snap-section p {
+  font-family: 'Arimo', sans-serif;
+  color: white;
+  font-size: 26px;
+}
