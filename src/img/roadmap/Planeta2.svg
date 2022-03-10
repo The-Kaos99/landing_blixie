@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;fill:#FF5C5C;stroke:#211915;stroke-miterlimit:10;}
+	.st2{fill:#D1FF5F;}
+	.st3{display:inline;fill:#FFF361;}
+	.st4{display:inline;fill:#64FF76;}
+	.st5{display:inline;fill:#88FCE6;}
+	.st6{display:inline;fill:#8AB5F9;}
+	.st7{display:inline;fill:#C88BF7;}
+	.st8{display:inline;fill:#F48CD4;}
+</style>
+<g id="planeta_1" class="st0">
+	<circle class="st1" cx="257" cy="257" r="250"/>
+</g>
+<g id="Planeta_2">
+	<circle class="st2" cx="256" cy="256" r="256"/>
+</g>
+<g id="Planeta3" class="st0">
+	<circle class="st3" cx="256.5" cy="255.6" r="249.5"/>
+</g>
+<g id="Planeta4" class="st0">
+	<circle class="st4" cx="257.5" cy="255.5" r="244.5"/>
+</g>
+<g id="Planeta5" class="st0">
+	<circle class="st5" cx="257" cy="257" r="245"/>
+</g>
+<g id="Planeta6" class="st0">
+	<ellipse class="st6" cx="257" cy="254.5" rx="249" ry="249.5"/>
+</g>
+<g id="Planeta7" class="st0">
+	<ellipse class="st7" cx="252.9" cy="254.5" rx="235.6" ry="246.5"/>
+</g>
+<g id="Planeta8" class="st0">
+	<circle class="st8" cx="257" cy="256" r="243"/>
+</g>
+</svg>
