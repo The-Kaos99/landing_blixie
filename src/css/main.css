@@ -180,11 +180,11 @@ div.menu_lateral_h ul{
 .snap_container{
   height: 100vh;
   overflow: auto;
-  scroll-snap-type: y mandatory;
+ /* scroll-snap-type: y mandatory;*/
 }
 
 #Home, #Play_to_Earn,#NFTs, #Blix_Token, #Roadmap,#About, #Parteners, #FAQ{
-   scroll-snap-align: start;
+   /*scroll-snap-align: start;*/
 
 } 
 
@@ -215,7 +215,7 @@ div.menu_lateral_h ul{
     overflow: hidden;
     position: relative;
     
-    margin-top: 15vh;
+    margin-top: 16vh;
     /*border: 1px solid red;*/
 }
 .sec_Bu{
