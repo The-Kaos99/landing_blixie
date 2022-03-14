@@ -18,6 +18,8 @@
     <!-- CSS Personalizado -->
     <link href="src/css/main.css" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
@@ -48,14 +50,14 @@
                 <!--Menu -->
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0  justify-content-center mx-auto " id="menuH"> <!-- mx-auto-->
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
+                        <li class="nav-item"> <!-- tenia el active-->
+                            <a class="nav-link active" href="#Home">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#Play_to_Earn">Play to Earn</a>
+                            <a class="nav-link scroll" href="#Play_to_Earn">Play to Earn</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#NFTs">NFTs</a>
+                            <a class="nav-link scroll" href="#NFTs">NFTs</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#Blix_Token">BLIX Token</a>
@@ -162,28 +164,26 @@
         <div class="content_seccion">
         
         <div class="row">
-            <h2 class="col-12 h1 mt-3 mb-3">Play to Earn</h2>
-            
-            <div class="col-sm-6">
-                <video>
-                    <source src="src/video/game.mp4" type="video/mp4"/>
-                </video>
-            </div>
-            
-            <div class="col-sm-6 bloque_aV"><!--para alinear verticalmente-->
-                <div> 
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.
-                    </p>
-                    <a href="#" ><button type="button" class="btn btn-primary btn-rounded mt-3">Play Game</button></a>
-                </div>
-            </div>
-            <div class="col-sm-12">
-                <a href="#" ><button type="button" class="btn btn-secondary btn-rounded mt-5">Ver Juego</button></a>
-            </div>
-        </div> <!--row -->
+           <h2 class="col-12 h1 mt-3 mb-3">Play to Earn</h2>
+
+           <div class="col-12">
+                <div class="itemT1">item 1</div>
+                <div class="itemT1">item 2</div>
+                <div class="itemT1">item 3</div>
+           </div> 
+
+           <div class="col-5">
+           </div> 
+           
+           <div class="col-5">
+
+           </div> 
+           <div class="col-2">
+               
+        </div> 
+
+        </div> <!--row --> 
+
         </div>
        
     </div><!-- play to earn -->
@@ -253,7 +253,38 @@
     
     <script type="text/javascript" src="main.js">
     </script>
+    <script>
+        /*
+        $(document).ready(function () {
+        
+          $('a').printThis();
+    
+      }); */
+      
+        $(document).ready(function() {
+            $(document).on("scroll", onScroll);
 
+            function onScroll(event){
+                var scrollPos = $(document).scrollTop();
+                
+                $('a').each(function () {
+                    var currLink = $(this);
+                    var refElement = $(currLink.attr("href"));
+
+                    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                        $('a').removeClass("active");
+                        currLink.addClass("active");
+                    }
+                    else{
+                        currLink.removeClass("active");
+                    }
+                    
+                });
+                
+            } 
+        }) 
+        
+    </script>
     <!-- MDB -->
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
