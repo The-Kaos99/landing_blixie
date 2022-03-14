@@ -1,4 +1,11 @@
 
+@font-face {
+    font-family: 'EthnocentricRg-Regular';
+    src: url("ethnocentricrg-regular/EthnocentricRg-Regular/ethnocentric_rg.woff") format("woff");
+    /*src:url(https://fonts2u.com/ethnocentricrg-regular.font);*/
+    /*font-style: normal;
+    font-weight: normal;*/
+}
 
 /* Ocultar la bara de scroll pero que siga funcionando el del raton */
 ::-webkit-scrollbar {
@@ -9,19 +16,23 @@
 /*nav*/
 .gris {
     /*opacidad 86, añadir 2 digitos*/
-    background: linear-gradient(to bottom right, #addafb, #f580ff);
+    /*background: linear-gradient(to bottom right, #addafb, #f580ff);*/
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .top-nav-collapse {
-    background: linear-gradient(to bottom right, #addafb, #f580ff) !important;
+    /*background: linear-gradient(to bottom right, #addafb, #f580ff) !important;*/
     height: 15vh !important;
 }
+
 
 /*del body*/
 .bg-body {
 
     background: linear-gradient(to bottom right, #addafb63, #f580ff63);
     position: relative; /*para que se referencia padre del menu lateral*/
+    /*font-family: "EthnocentricRg-Regular";*/
+    font-size: 20px;
 }
 
 /* div sección del video*/
@@ -59,6 +70,7 @@
     -moz-border-radius: 24px;   
     border-radius: 24px;   
     -webkit-box-shadow: 0 2px 5px #19748f; 
+    background-color: #548dc7 !important;
 }
 
 
@@ -130,6 +142,9 @@ div.menu_lateral_h ul{
     padding-top:1vh;/*120px;/*12%;*/
     
 }
+/*modo movil*/
+
+
 /*Adaptar la posicion del boton byBlix en fucnión del subtitulo, welcome...*/
 @media screen and (max-width : 600px){
     .btn_buyBlix{

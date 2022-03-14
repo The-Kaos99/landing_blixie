@@ -19,12 +19,12 @@
 <body>
     <div class="snap-container">
       <div class="snap-section">
-          <h3>Section 01</h3>
+          <h3 id="sec1">Section 01</h3>
           <p>You gotta smoke test your hypothesis product market fit yet let's not solutionize this right now parking lot it but locked and loaded. Rehydrate the team it just needs more cowbell.</p>
     </div>
         
     <div class="snap-section">
-          <h3>Section 02</h3>
+          <h3 id="sec2">Section 02</h3>
           <p>In this space. Can you put it on my calendar? old boys club, but five-year strategic plan. Digital literacy out of scope close the loop but quick-win your work on this project has been really impactful.</p>
     </div>
         
@@ -44,5 +44,24 @@
     </div> 
         
   </div>
+    
+    <script>
+        var elem = document.getElementById('sec1');
+        var clientRect = elem.getBoundingClientRect();
+        
+        console.log(clientRect.top);
+        console.log("hola");
+        
+        function isInViewport(elem) {
+            var distance = elem.getBoundingClientRect();
+            return (
+                distance.top < (window.innerHeight || document.documentElement.clientHeight) && distance.bottom > 0
+            );
+        }
+        if (isInViewport(elem)) {
+            // está en el viewport
+        }
+        
+    </script>
 </body>
 </html>
