@@ -6,6 +6,9 @@
     /*font-style: normal;
     font-weight: normal;*/
 }
+body {
+    position: relative;
+}
 
 /* Ocultar la bara de scroll pero que siga funcionando el del raton */
 ::-webkit-scrollbar {
@@ -16,13 +19,13 @@
 /*nav*/
 .gris {
     /*opacidad 86, añadir 2 digitos*/
-    /*background: linear-gradient(to bottom right, #addafb, #f580ff);*/
-    background-color: rgba(0, 0, 0, 0);
+    background: linear-gradient(to bottom right, #addafb, #f580ff);
+    /*background-color: rgba(0, 0, 0, 0);*/
 }
 
 .top-nav-collapse {
-    /*background: linear-gradient(to bottom right, #addafb, #f580ff) !important;*/
-    height: 15vh !important;
+    /**/background: linear-gradient(to bottom right, #addafb, #f580ff) !important;
+   /* height: 10vh !important;*/
 }
 
 
@@ -69,9 +72,10 @@
     -webkit-border-radius: 24px;   
     -moz-border-radius: 24px;   
     border-radius: 24px;   
-    -webkit-box-shadow: 0 2px 5px #19748f; 
-
+    /*-webkit-box-shadow: 0 2px 5px #19748f; 
+    background-color: #548dc7 !important;*/
     background: radial-gradient(#20ffa1,#548dc7); 
+    
 }
 
 
@@ -144,11 +148,6 @@ div.menu_lateral_h ul{
     
 }
 /*modo movil*/
-@media screen and (max-width: 575px){
-    .gris{
-        background: linear-gradient(to bottom right, #addafb, #f580ff);
-    }
-}
 
 
 /*Adaptar la posicion del boton byBlix en fucnión del subtitulo, welcome...*/
@@ -204,13 +203,13 @@ div.menu_lateral_h ul{
 
 /*_Aplicando scroll_snap*/
 .snap_container{
-  height: 100vh;
+ /* height: 100vh;
   overflow: auto;
- /* */scroll-snap-type: y mandatory;
+ scroll-snap-type: y mandatory; */
 }
 
 #Home, #Play_to_Earn,#NFTs, #Blix_Token, #Roadmap,#About, #Parteners, #FAQ{
-   /**/scroll-snap-align: start;
+   /*scroll-snap-align: start;*/
 
 } 
 
@@ -225,7 +224,7 @@ div.menu_lateral_h ul{
     height: 55vh;
 }
 
-.bloque_aV{ /*bloque para alinear verticalmente*/
+.bloque_aV{
     /*es el elemento padre de lo que se quiere alinear, un div*/
     display: grid;
     place-items: center;
@@ -237,18 +236,4 @@ div.menu_lateral_h ul{
     -moz-border-radius: 24px;   
     border-radius: 24px;   
     -webkit-box-shadow: 0 2px 5px #19748f;
-}
-#Play_to_Earn ul li{
-    display: inline-block;
-    margin-left: 20px;
-}
-
-.caja {
-    border: 1px solid black;
-    width:200px;
-    height:200px;
-}
-
-.roja {
-    background-color: red;
 }
