@@ -4,7 +4,7 @@
  let menuLa=document.querySelector(".menu_lateral");
 
 
- 
+
  //por defecto, tiene que efectuarse una vez al cargarse la página. podría llamarlo justo al cargar
  if(window.innerWidth<575){
      //caja.innerHTML=menuLH;
@@ -38,4 +38,5 @@
          
      }
  } 
+
  
