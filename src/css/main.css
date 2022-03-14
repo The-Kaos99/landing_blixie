@@ -70,7 +70,8 @@
     -moz-border-radius: 24px;   
     border-radius: 24px;   
     -webkit-box-shadow: 0 2px 5px #19748f; 
-    background-color: #548dc7 !important;
+
+    background: radial-gradient(#20ffa1,#548dc7); 
 }
 
 
@@ -143,6 +144,11 @@ div.menu_lateral_h ul{
     
 }
 /*modo movil*/
+@media screen and (max-width: 575px){
+    .gris{
+        background: linear-gradient(to bottom right, #addafb, #f580ff);
+    }
+}
 
 
 /*Adaptar la posicion del boton byBlix en fucnión del subtitulo, welcome...*/

@@ -1,0 +1,112 @@
+<!DCOTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+        ul {
+        position: fixed;
+        
+        }
+        ul li {
+            list-style: none;
+            margin: 0 30px 0 0;
+            display: inline;
+        }
+        .active {
+            font-family:'Droid Sans', serif;
+            font-size: 14px;
+            color: #fff;
+            text-decoration: none;
+            line-height: 50px;
+        }
+        a {
+            font-family:'Droid Sans', serif;
+            font-size: 14px;
+            color: black;
+            text-decoration: none;
+            line-height: 50px;
+        }
+        #home {
+            background-color: grey;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+        #services {
+            background-color: #878775;
+            height: 100%;
+            width: 100%;
+        }
+        #about {
+            background-color: blue;
+            height: 100%;
+            width: 100%;
+        }
+        #work {
+            background-color: red;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!--<div id="bloque">
+    Tienes ganas de que te salude...
+    <div id="saludo">Pincha para que te salude.</div> 
+    pruebalo...
+    </div> -->
+    
+
+    <ul class="nav navbar-nav">
+        <li class="item-101 hovernav">  <a class="active" href="#home" >Home</a></li>
+        <li class="item-102 hovernav">  <a class="scroll" href="#about">About</a></li>
+        <li class="item-103 hovernav">  <a class="scroll" href="#services">Services</a></li>
+        <li class="item-104 hovernav">  <a class="scroll" href="#work">Work</a></li>
+    </ul>
+        
+        <div id="home"></div>
+        <div id="about"></div>
+        <div id="services"></div>
+        <div id="work"></div>
+
+
+    <script>
+        /*
+        $(document).ready(function() {
+            $('#saludo').click(function () { 
+                $('#saludo').text("Hola mundo.");
+            });
+        }); */
+        $(document).ready(function() {
+            $(document).on("scroll", onScroll);
+
+            function onScroll(event){
+                var scrollPos = $(document).scrollTop();
+
+                $('a').each(function () {
+                    var currLink = $(this);
+                    var refElement = $(currLink.attr("href"));
+
+                    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                        $('a').removeClass("active");
+                        currLink.addClass("active");
+                    }
+                    else{
+                        currLink.removeClass("active");
+                    }
+                });
+
+                $('#saludo').text("Hola mundo.");
+
+            }
+    })
+        
+    </script>
+</body>
+</html>
