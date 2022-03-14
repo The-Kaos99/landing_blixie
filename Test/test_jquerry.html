@@ -69,13 +69,13 @@
         <li class="item-103 hovernav">  <a class="scroll" href="#services">Services</a></li>
         <li class="item-104 hovernav">  <a class="scroll" href="#work">Work</a></li>
     </ul>
-        
-        <div id="home"></div>
-        <div id="about"></div>
-        <div id="services"></div>
-        <div id="work"></div>
 
+    <div id="home"></div>
+    <div id="about"></div>
+    <div id="services"></div>
+    <div id="work"></div>
 
+    
     <script>
         /*
         $(document).ready(function() {
@@ -83,6 +83,7 @@
                 $('#saludo').text("Hola mundo.");
             });
         }); */
+        
         $(document).ready(function() {
             $(document).on("scroll", onScroll);
 
@@ -93,6 +94,8 @@
                     var currLink = $(this);
                     var refElement = $(currLink.attr("href"));
 
+                    console.log("hola");
+
                     if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
                         $('a').removeClass("active");
                         currLink.addClass("active");
@@ -102,10 +105,11 @@
                     }
                 });
 
-                $('#saludo').text("Hola mundo.");
+        
 
             }
-    })
+        }) 
+
         
     </script>
 </body>

@@ -14,7 +14,20 @@
         .espacio{
             height: 80px;
         }
+        .caja {
+            border: 1px solid black;
+            width:200px;
+            height:200px;
+        }
+        
+        .roja {
+            background-color: red;
+        }
+        .azul {
+            background-color: blue;
+        }
     </style>
+    <script src="DetectarVisibilidad.js"></script>
 </head>
 <body>
     <div class="snap-container">
@@ -26,6 +39,8 @@
     <div class="snap-section">
           <h3 id="sec2">Section 02</h3>
           <p>In this space. Can you put it on my calendar? old boys club, but five-year strategic plan. Digital literacy out of scope close the loop but quick-win your work on this project has been really impactful.</p>
+          <div id="miCaja" class="caja roja"></div>
+
     </div>
         
     <div class="snap-section">
@@ -36,6 +51,7 @@
     <div class="snap-section">
           <h3>Section 04</h3>
           <p>Product market fit disband the squad but rehydrate as needed game-plan. A loss a day will keep you focus incentivization, dunder mifflin.</p>
+          <div id="miOtraCaja" class="caja azul"></div>
     </div>
         
     <div class="snap-section">
@@ -46,7 +62,7 @@
   </div>
     
     <script>
-        var elem = document.getElementById('sec1');
+        /*var elem = document.getElementById('sec1');
         var clientRect = elem.getBoundingClientRect();
         
         console.log(clientRect.top);
@@ -60,7 +76,17 @@
         }
         if (isInViewport(elem)) {
             // está en el viewport
+        } */
+
+        function cambiaVisibilidad(visible, elemento){
+        console.log("¿Elemento %s está visible?: %s", elemento.id, visible);
+        
         }
+        
+        var miDiv = document.getElementById("miCaja");
+        var miOtroDiv = document.getElementById("miOtraCaja");
+        inViewportPartially(miDiv, cambiaVisibilidad);
+        inViewportTotally(miOtroDiv, cambiaVisibilidad);
         
     </script>
 </body>

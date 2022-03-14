@@ -19,7 +19,7 @@
     <link href="src/css/main.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
+    
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
@@ -30,6 +30,8 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-PJS8JRN');</script>
     <!-- End Google Tag Manager -->
+
+    <script src="DetectarVisibilidad.js"></script>
 </head>
 
 <body class="bg-body"> 
@@ -164,23 +166,38 @@
         <div class="content_seccion">
         
         <div class="row">
-           <h2 class="col-12 h1 mt-3 mb-3">Play to Earn</h2>
+           <h2 class="col-12 h1 mt-3 mb-3" id="titulo">Play to Earn</h2>
+           <div id="miCaja" class="caja roja"></div>
 
            <div class="col-12">
-                <div class="itemT1">item 1</div>
-                <div class="itemT1">item 2</div>
-                <div class="itemT1">item 3</div>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
            </div> 
 
            <div class="col-5">
+               <div style="border: 1px solid green; height: 300px; padding-left:20px;">
+                   imagen grande
+               </div>
            </div> 
            
-           <div class="col-5">
-
+           <div class="col-5" style="border: 1px solid green;">
+                <p>Name</p>
+                <p>Text</p> 
            </div> 
+
            <div class="col-2">
-               
-        </div> 
+               <div style="border: 1px solid green; height:150px; width:80px;overflow:scroll"> 
+                scroll imgs<br/>
+                img 1 <br/>
+                img 2 <br/>
+                img 3 <br/>
+                img 4 <br/>
+                img 5 <br/>
+                </div>
+            </div> 
 
         </div> <!--row --> 
 
@@ -198,7 +215,6 @@
             </div>
         </div>
     </div>
-    
     
     <div class="container-fluid " id="Blix_Token">
         <div class="content_seccion">
@@ -251,25 +267,45 @@
     </div>
 </div> <!-- snap_container -->
     
-    <script type="text/javascript" src="main.js">
-    </script>
+    
     <script>
+        //var elemento= document.getElementById("titulo"); 
+        //var miCaja = elemento.getBoundingClientRect();
+        //console.log(miCaja.top);
+        //console.log(elemento.id);
+        
+        function cambiaVisibilidad(visible, elemento){
+            console.log("¿Elemento %s está visible?: %s", elemento.id, visible);
+        }
+    
+        var miDiv = document.getElementById("miCaja");
+        //var miOtroDiv = document.getElementById("miOtraCaja");
+
+        inViewportPartially(miDiv, cambiaVisibilidad);
+        inViewportTotally(miDiv, cambiaVisibilidad);
+
         /*
         $(document).ready(function () {
         
           $('a').printThis();
     
       }); */
-      
+        /*
         $(document).ready(function() {
             $(document).on("scroll", onScroll);
+            console.log(event);
+
+            
 
             function onScroll(event){
+               
                 var scrollPos = $(document).scrollTop();
-                
+               
+
                 $('a').each(function () {
                     var currLink = $(this);
                     var refElement = $(currLink.attr("href"));
+                    console.log("hola");
 
                     if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
                         $('a').removeClass("active");
@@ -282,9 +318,16 @@
                 });
                 
             } 
-        }) 
+
+           
+        }) */
+
+        
         
     </script>
+
+    <script type="text/javascript" src="main.js"> </script>
+
     <!-- MDB -->
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

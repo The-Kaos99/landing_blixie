@@ -19,7 +19,8 @@
     /*border: 1px solid orange;
 } */
 
-* {
+
+*{
   margin: 0;
   padding: 0;
 }
@@ -27,18 +28,20 @@
 .snap-container {
   height: 100vh;
   overflow: auto;  
-  scroll-snap-type: y mandatory;  
-}
+
+  /*scroll-snap-type: y mandatory;  */
+} 
 
 .snap-section {
   text-align: center;
-  /*padding: 200px 300px 0 300px;/*rellena toda la pantalla con los paddings*/
-  /*padding: 100px 100px 100px 100px;*/
-  scroll-snap-align: start;
-  height: 100vh;/*min-height: 100vh;/*60vh; */ 
+  padding: 200px 300px 0 300px;/*rellena toda la pantalla con los paddings*/
+  padding: 100px 100px 100px 100px;
+
+  /*scroll-snap-align: start;*/
+  height: 100vh;/*min-height: 100vh;/*60vh;*/ 
     
   border:1px solid black;
-}
+} 
 
 .snap-section:nth-child(1) {
   background: #556270;

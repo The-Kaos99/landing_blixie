@@ -1,5 +1,5 @@
  //__Cogiendo referencias
- let caja=document.getElementById("mensaje");
+ let caja1=document.getElementById("mensaje");
  let menuLH= document.querySelector(".menu_lateral_h");
  let menuLa=document.querySelector(".menu_lateral");
 
@@ -10,7 +10,6 @@
      //caja.innerHTML=menuLH;
      menuLH.style.display="inline";
      menuLa.style.display="none";
-     espaciado.style.height="90px";
  }
  else{
      menuLH.style.display="none";

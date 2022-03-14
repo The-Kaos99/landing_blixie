@@ -225,7 +225,7 @@ div.menu_lateral_h ul{
     height: 55vh;
 }
 
-.bloque_aV{
+.bloque_aV{ /*bloque para alinear verticalmente*/
     /*es el elemento padre de lo que se quiere alinear, un div*/
     display: grid;
     place-items: center;
@@ -237,4 +237,18 @@ div.menu_lateral_h ul{
     -moz-border-radius: 24px;   
     border-radius: 24px;   
     -webkit-box-shadow: 0 2px 5px #19748f;
+}
+#Play_to_Earn ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.caja {
+    border: 1px solid black;
+    width:200px;
+    height:200px;
+}
+
+.roja {
+    background-color: red;
 }
