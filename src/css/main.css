@@ -265,21 +265,41 @@ div#v1:nth-child(1){
     border: 1px solid blue;
     display: inline-block;
 } */
+/*estilo de estructura*/
+.btn-container{
+    padding-bottom: 10px;
+}
 div#v1{
-    display: flex;
-    flex-wrap: wrap;
+    /*display: flex;
+    flex-wrap: wrap; */
     font-size: 15px;
 }
 div#v1 div{
     border: 1px solid green;
-    flex: 1 1 200px;
+    /*flex: 1 1 200px;*/
     height: 200px;
+    float:left;
 }
 div#v1 div:nth-child(1){ 
     width: 60%;
     /*float: left;*/
-} 
+}
 div#v1 div:nth-child(2){ 
     width: 40%;
    /* float: left;*/
 } 
+.recuadro{
+    border: 1px solid green;
+    float:left;
+    height: 370px;
+}
+/*
+div#v2 .recuadro:nth-child(1) div{
+    border: 1px solid red;
+} */
+div#v2 div:nth-child(1){
+    width: 70%;
+}
+div#v2 div:nth-child(2){
+    width: 25%;
+}
