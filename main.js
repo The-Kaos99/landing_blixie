@@ -38,17 +38,17 @@
      }
  } 
 
- window.onscroll = function() {myFunction()};
+ /*window.onscroll = function() {myFunction()};
 
  function myFunction() {
 
      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
          //document.getElementById("myP").className = "test";
-         console.log("hola");
+         //console.log("hola");
      } else {
          //document.getElementById("myP").className = "";
-         console.log("adios");
+         //console.log("adios");
      }
- }
+ } */
 
  

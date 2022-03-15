@@ -201,17 +201,19 @@ div.menu_lateral_h ul{
 }
 
 
-/*_Aplicando scroll_snap*/
-.snap_container{
- /* height: 100vh;
-  overflow: auto;
- scroll-snap-type: y mandatory; */
-}
+/*_Aplicando scroll_snap*/ 
+/*.snap_container{
 
+ height: 100vh;
+ overflow: auto;  
+ scroll-snap-type: y mandatory; 
+}*/
+
+/*
 #Home, #Play_to_Earn,#NFTs, #Blix_Token, #Roadmap,#About, #Parteners, #FAQ{
-   /*scroll-snap-align: start;*/
+   scroll-snap-align: center;
 
-} 
+} */
 
 
 /*__Seccion PLAY TO EARN*/

@@ -18,7 +18,7 @@
     <!-- CSS Personalizado -->
     <link href="src/css/main.css" rel="stylesheet">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
     
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -76,7 +76,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#FAQ">FAQ</a>
                         </li>
-                        <!-- Provando a añadir un div -->
+                        <!-- Menu lateral en pos horizontal -->
                         <li class="mt-5">
                             <div class="menu_lateral_h ">
                                 <ul>
@@ -121,7 +121,7 @@
     </div> <!-- container-fluid, barra de menu -->
     
     
-<div class="snap_container"-><!--Contenedor de todas las secciones-->
+<div class="snap_container" id="contenedor"-><!--Contenedor de todas las secciones-->
     <!--seccion del video -->
     <div class="container-fluid text-light text-center px-0 " id="Home">
         <div class="home-vi">
@@ -164,6 +164,9 @@
             <div class="row text-center" >
                 <div class="col-12"> 
                     <h2 class="h1 mt-3 mb-3">Play to earn</h2> 
+                    <div id="test">mensaje</div>
+                    <button type="button" onclick="scrollWin()" style="border:1px solid green">Scroll 100px vertically!</button>
+
                 </div>
                 
             </div>
@@ -235,6 +238,106 @@
     
     
     <script>
+        var elemento = document.getElementById('Home');
+        var posicion = elemento.getBoundingClientRect();
+        var elemento2 = document.getElementById('Play_to_Earn');
+        var posicion2 = elemento.getBoundingClientRect();
+        //console.log(posicion.top, posicion.right, posicion.bottom, posicion.left);
+        console.log("obj1 "+posicion.top, posicion.bottom);
+        //console.log("obj2 "+posicion.top, posicion.bottom);
+        var scrollPos = 0; //para saber la direccion de scroll
+        //console.log(document.documentElement.clientHeight);
+
+        var divHeight;
+        var obj = document.getElementById('contenedor');
+
+        if(obj.offsetHeight){
+            divHeight=obj.offsetHeight;
+        }
+        else if(obj.style.pixelHeight){
+            divHeight=obj.style.pixelHeight;
+        }    
+        console.log("contenedor altura"+divHeight);
+
+        //window.scrollTo(0, 0);
+        console.log(window.pageYOffset);
+        var contador= 0;
+        window.addEventListener('scroll', function() {
+           // document.getElementById('test').innerHTML = window.pageYOffset + 'px';
+           //console.log(window.pageYOffset + 'px');
+            //necsito saber las posiciones de cada elemento
+            //window.scrollTo(0, 100);
+            //window.scrollBy(0, 20);
+            //console.log(window.pageYOffset);
+            //scrollWin();
+
+            console.log(window.pageYOffset);
+            /*
+            if ( (document.body.getBoundingClientRect()).top > scrollPos){
+                // ARRIBA
+                console.log("arriba");
+                //console.log(posicion.top, posicion.right, posicion.bottom, posicion.left);
+                //console.log("client S: "+(document.body.getBoundingClientRect()).top);
+
+            }
+            else{
+                // ABAJO
+                console.log("abajo");
+                scrollPos = (document.body.getBoundingClientRect()).top;
+                //console.log("client B: "+(document.body.getBoundingClientRect()).top);
+            } */
+            
+            var tamContenedor= (posicion.bottom - posicion.top)/4;
+            //console.log("contenedor "+ tamContenedor);
+            var tamContenedor2= divHeight/8;
+
+            if(window.pageYOffset>152 && window.pageYOffset <608 ){
+                //window.location="#NFTs";
+                console.log("esta dentro");
+                if(contador==0){
+                    console.log("me muevo");
+                    contador=1;
+                   /* var elemento2 = document.getElementById('Play_to_Earn');
+                    var posicion2 = elemento.getBoundingClientRect();*/
+
+                    //console.log("obj2 "+posicion.top, posicion.bottom);
+                   // window.location="#Play_to_Earn";
+                   window.scrollTo(0,608);
+                }
+        
+            } else if(window.pageYOffset>760 && window.pageYOffset <1216){
+                console.log("esta dentro");
+                if(contador==0){
+                    console.log("me muevo");
+                    contador=1;
+                   /* var elemento2 = document.getElementById('Play_to_Earn');
+                    var posicion2 = elemento.getBoundingClientRect();*/
+
+                    //console.log("obj2 "+posicion.top, posicion.bottom);
+                    window.location="#NFTs";
+                }
+                
+            }else{
+                console.log("esta fuera");
+                contador=0;
+            }
+            /*
+            if(pageYOffset > document.documentElement.clientHeight/3){
+                console.log(document.documentElement.clientHeight);
+                console.log("me muevo");
+            }else{
+                console.log("no");
+            } */
+        }); 
+        
+        function scrollWin() {
+            //window.scrollTo(0, 120);
+            //console.log(window.pageYOffset); /*me da la posicion de la ventana en y*/
+            //console.log(document.body.scrollTop );
+            window.location="#NFTs";
+        } 
+
+
         /*Provando evento onscroll*/
         //window.onscroll = function() {myFunction()};
         /*
