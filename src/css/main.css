@@ -239,3 +239,47 @@ div.menu_lateral_h ul{
     border-radius: 24px;   
     -webkit-box-shadow: 0 2px 5px #19748f;
 }
+
+.about{
+    /*border: 1px solid black;*/
+}
+.tab-btn:hover:not(.active){
+    background-color: grey;
+}
+.about-content{
+    /*border: 1px solid grey*/
+}
+.content{ /*los contenidos de los btn no se ven */
+    display: none;
+}
+
+.tab-btn.active{
+    background-color: lightseagreen;
+}
+.content.active{
+    display: block;
+}
+/*
+div#v1:nth-child(1){ 
+    width: 400px;
+    border: 1px solid blue;
+    display: inline-block;
+} */
+div#v1{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+div#v1 div{
+    border: 1px solid green;
+    flex: 1 1 200px;
+    height: 200px;
+}
+div#v1 div:nth-child(1){ 
+    width: 60%;
+    /*float: left;*/
+} 
+div#v1 div:nth-child(2){ 
+    width: 40%;
+   /* float: left;*/
+} 
