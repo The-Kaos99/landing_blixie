@@ -233,6 +233,11 @@ div.menu_lateral_h ul {
         width: 25vw !important;
         /*20vw;/*150px;*/
     }
+
+    /*sec 3  NFts*/
+    div#NFTs div.col-12 p{
+        font-size: 15px;
+    }
 }
 
 /*Adaptar la posicion del boton byBlix en fucnión del subtitulo, welcome...*/
@@ -243,6 +248,20 @@ div.menu_lateral_h ul {
         /*120px;/*12%;*/
 
     }
+}
+/*Para pantallas muy grandes, large, extra large,extra grande */
+@media screen and(max-width: 992){
+    /*general*/
+    div.about-content{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    div#v2 div.recuadro #character_container{ 
+        height:45vh !important;  
+        width: 150px !important;  
+    }
+
 }
 
 #Home {
@@ -329,6 +348,7 @@ div.menu_lateral_h ul {
 
 } */
 
+<<<<<<< HEAD
 
 /*__Seccion PLAY TO EARN*/
 
@@ -520,6 +540,16 @@ div#v2 .recuadro #character_container span.character {
     /*width: 25%;*/
 }
 
+=======
+/*Section NFTs*/
+.card{
+    border-radius: 20px;
+}
+.test{
+    border: 1px solid green !important;
+    
+}
+>>>>>>> 01aa2f34822158802c439a315fdbbe3663a895c9
 /*Seccion_About*/
 .transparent {
     background-color: rgba(0, 0, 0, 0);
