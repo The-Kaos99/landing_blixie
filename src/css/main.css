@@ -197,7 +197,8 @@ div.menu_lateral_h ul{
         float:none;
     }
     div#v2 div.recuadro #character_container{ 
-        height: 30vh !important;/*360px;*/    
+        height: 45vh !important;/*360px;*/  
+        width: 100% !important;  
     }
     div#v2 div.recuadro .img_recuadro img{
         width: 25vw !important;/*20vw;/*150px;*/
@@ -369,32 +370,56 @@ div#v2 .recuadro .img_recuadro img{
 }
 div#v2 .recuadro #character_container{
     border:1px solid grey; 
-    width: 80%; 
+    width: 70%;/*200px;/*80%;*/
+    
     height: 55vh;/*360px;*/
     overflow: auto;
 }
-div#v2 .recuadro #character_container div.character{
-    border: 1px solid blue;
-    width: 30px;/*10vw;*/
-    height: 30px;/*10vh;*/
 
-    /*background-color: grey;*/
-    margin-bottom: 10px;
-    display: inline-block;
+div#v2 .recuadro #character_container span.character{
+    border: 1px solid blue;
+    width: 100px;/*10vw;/*10vw;/*10vw;*/
+    height: 100px;/*10vh;/*10vh;/*10vh;*/
+    /*margin-bottom: 10px;*/
+    display: inline-block;/*Para que las propiedades de height y width funcionen*/
+    background-repeat: no-repeat;
 }
+
 #img0{
-    background-color: grey;
+    /*1800x150*/
+    background-image: url(MiasmaNegro/Estrella/estrella.png);
+    background-size: 1176px;/*1180px; /*de lognitud en h total*/
+
+    /*background-position: -98px 0;*/
+    /*animation: animarse0 steps(12) 2s; */
 }
 #img1{
-    background-color: red;
+    background-image: url(MiasmaNegro/Horizontal/horizontal_horizontalAtlast.png);
+    background-size: 784px; /*de lognitud en h total*/
+
+    /*background-position: -98px 0;*/
+    
 }
-#img2{
-    background-color: green;
-}
-#img2{
-    background-color: yellow;
+#img1.active{
+    animation: animarse1 steps(8) 2s infinite; 
 }
 
+@keyframes animarse0{
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: -1180px;
+    }
+}
+@keyframes animarse1{
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: -784px;
+    }
+}
 
 .test{ /*clase para char activo*/
     border: 1px solid red;

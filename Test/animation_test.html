@@ -11,18 +11,40 @@
             background: url("BOMBAmulti5horizontal.png");/*orange;*/
             
             /*background-position: 0px 0; */
-            animation: cambiar 2s steps(17) infinite;
-
+            animation: cambiar 2s steps(17);/*infinite;*/
+            border-top-style: red;
        }
        .ojo2{
             height:150px;
             width: 150px; /*2550 px totales*/
-            background: url("BOMBAmulti5horizontal.png");/*orange;*/
+            background-image: url("BOMBAmulti5horizontal.png");/*orange;*/
             
             /*background-position: 0px 0; */
-            animation: cambiar 2s steps(17) infinite;
+            animation: cambiar 2s steps(17);
             /*border-style: hidden;*/
             /*border: 1px solid red;*/
+           
+            border-top: red;
+            background-color: white;
+
+       }
+      .ojo3{
+            height:150px;
+            width: 150px; 
+            border-top-style: red;
+            background-color: pink;
+            border-style: pink;
+       }
+       .ojo4{
+            height:150px;
+            width: 150px; /*2550 px totales*/
+            background-image: url("BOMBAmulti5horizontal.png");/*orange;*/
+            
+            /*background-position: 0px 0; */
+            animation: cambiar 2s steps(17);
+            /*border-style: hidden;*/
+            /*border: 1px solid red;*/
+           display: inline-block;
 
        }
 
@@ -49,6 +71,12 @@
             /*background-color: grey;*/
             margin-bottom: 10px;
         }
+        .recuadro{
+            border: 1px solid green;
+            float: left;
+            width: 300px;
+            height: 200px;
+        }
    </style> 
 
 
@@ -56,18 +84,21 @@
 <body>
     
     <div class="ojo" ></div>
-    <img class="ojo2"> </img>
+    <img class="ojo2"></img>
+    <img class="ojo3"></img>
+    <span class="ojo4"></span>
 
-    <div id="character_container" >
-        <div class="char" id="img0"></div>
-        <div class="char" id="img1"></div>
-        <div class="char" id="img2"></div>
-        <div class="char" id="img3"></div>
-        <!--<img class="character" id="img0" src="src/img/per_sonic.png" />-->
-        <!--<img class="character" id="img1" src="src/img/per_crash.png" />
-        <img class="character" id="img2" src="src/img/per_yoshi.png" />
-        <img class="character" id="img3" src="src/img/per_sonic.png" /> -->
+    <div class="recuadro" ></div>
+        <div id="character_container" >
+            <div class="char" id="img0"></div>
+            <div class="char" id="img1"></div>
+            <div class="char" id="img2"></div>
+            <div class="char" id="img3"></div>
+            <!--<img class="character" id="img0" src="src/img/per_sonic.png" />-->
+            <!--<img class="character" id="img1" src="src/img/per_crash.png" />
+            <img class="character" id="img2" src="src/img/per_yoshi.png" />
+            <img class="character" id="img3" src="src/img/per_sonic.png" /> -->
+        </div>
     </div>
-
 </body>
 </html>
