@@ -246,6 +246,7 @@ div.menu_lateral_h ul{
 #Parteners{
     height: 100vh !important;
     border: rgb(0, 68, 255) 5px dotted;
+    overflow-y: scroll;
 }
 #FAQ{
     height: 100vh !important;
@@ -429,4 +430,5 @@ div#v2 .recuadro #character_container span.character{
 /*Seccion_About*/
 .transparent{
     background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
 }
