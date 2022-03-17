@@ -1,13 +1,18 @@
+
+/*
 @font-face {
-    font-family: 'EthnocentricRg-Regular';
-    src: url("ethnocentricrg-regular/EthnocentricRg-Regular/ethnocentric_rg.woff") format("woff");
-    /*src:url(https://fonts2u.com/ethnocentricrg-regular.font);*/
-    /*font-style: normal;
-    font-weight: normal;*/
-}
+    font-family: 'CabinetGrotesk-Variable';
+    src: url('../font/CabinetGrotesk_complete/Fonts/WEB/fonts/CabinetGrotesk-Variable.woff2') format('woff2');
+         /*url('../fonts/CabinetGrotesk-Variable.woff') format('woff'),
+         url('../fonts/CabinetGrotesk-Variable.ttf') format('truetype');*/
+         /*font-weight: 100 900;
+         font-display: swap;
+         font-style: normal;
+} */
 
 body {
     position: relative;
+    /*font-family: "CabinetGrotesk-Variable";*/
 }
 
 /* Ocultar la bara de scroll pero que siga funcionando el del raton */
@@ -233,10 +238,14 @@ div.menu_lateral_h ul {
         width: 25vw !important;
         /*20vw;/*150px;*/
     }
-
+    
     /*sec 3  NFts*/
     div#NFTs div.col-12 p{
         font-size: 15px;
+    }
+    /*sec  Roadmap*/
+    div.planets_container img{
+        /*width:60vw;*/
     }
 }
 
@@ -263,6 +272,7 @@ div.menu_lateral_h ul {
     }
 
 }
+
 
 #Home {
     height: 100vh !important;
@@ -375,8 +385,6 @@ div.menu_lateral_h ul {
     border-radius: 24px;
     -webkit-box-shadow: 0 2px 5px #19748f;
 }
-
-
 .tab-btn:hover:not(.active) {
     background-color: grey;
 }
@@ -575,6 +583,60 @@ div#v2 .recuadro #character_container span.character {
     margin-top: 10vh;
 }
 
+/*Radmap*/
+/*.planets_container{
+    font-size:15px !important;
+    /*position: relative; /*para contenedor de ref de las pos absolutas de sus hijos*/
+    /*position: relative;
+}*//*
+.test{
+    border: 1px solid green;
+}
+.margin1 {
+    
+    margin-top: 25vh;
+    position: relative;
+}
+
+.margin2 {
+    
+    margin-top: 20vh;
+}
+.margin3 {
+    
+    margin-top: 15vh;
+}
+.margin4 {
+    
+    margin-top: 10vh;
+}
+.margin5 {
+    
+    margin-top: 24vh;
+}
+.margin6 {
+    
+    margin-top: 18vh;
+}
+.margin7 {
+    
+    margin-top: 10vh;
+}
+.text_2022{
+    position: absolute;
+    top:-22vh;
+
+}
+.text_2023{
+    position: absolute;
+    top:-21vh;
+}
+.text_Metaverse{
+    position: absolute;
+    
+    right: 20vw;
+    top: 45vh;
+} */
 /*NFTs*/
 span.hide{
     display: none;
