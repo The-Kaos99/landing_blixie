@@ -30,7 +30,12 @@ h2{
 
 
 /*nav*/
-.gris {
+.gris{
+    /*opacidad 86, añadir 2 digitos*/
+    background: linear-gradient(to bottom right, #addafb, #f580ff);
+    /*background-color: rgba(0, 0, 0, 0);*/
+}
+#menuH {
     /*opacidad 86, añadir 2 digitos*/
     background: linear-gradient(to bottom right, #addafb, #f580ff);
     /*background-color: rgba(0, 0, 0, 0);*/
@@ -39,8 +44,8 @@ h2{
 .top-nav-collapse {
     /**/
     background: linear-gradient(to bottom right, #addafb, #f580ff) !important;
-    height: 10vh !important;
-    /**/
+    /*height: 10vh !important;
+    */
 }
 
 
@@ -388,10 +393,7 @@ div.menu_lateral_h ul {
 span.hide{
     display: none;
 }
-.show {
-    display:block;
-    border: 1px solid red;
-}
+
 
 /*Seccion_About*/
 .transparent {
