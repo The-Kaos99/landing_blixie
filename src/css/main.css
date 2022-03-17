@@ -289,7 +289,7 @@ div.menu_lateral_h ul {
 
 .content_seccion {
     /* Estable el margen poara que el menu nop se coma parte de las secciones */
-    margin-top: 10%;
+    margin-top: 5vh;
 }
 
 
