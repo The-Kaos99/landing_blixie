@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>test</title>
+    
+    <link rel="stylesheet" href="style_test.css"/>
+    
+    <style>
+        #menu{
+            height: 60px;
+            background-color: green;
+        }
+        .espacio{
+            height: 80px;
+        }
+        .caja {
+            border: 1px solid black;
+            width:200px;
+            height:200px;
+        }
+        
+        .roja {
+            background-color: red;
+        }
+        .azul {
+            background-color: blue;
+        }
+    </style>
+    <script src="DetectarVisibilidad.js"></script>
+</head>
+<body>
+    <div class="snap-container">
+      <div class="snap-section">
+          <h3 id="sec1">Section 01</h3>
+          <p>You gotta smoke test your hypothesis product market fit yet let's not solutionize this right now parking lot it but locked and loaded. Rehydrate the team it just needs more cowbell.</p>
+    </div>
+        
+    <div class="snap-section">
+          <h3 id="sec2">Section 02</h3>
+          <p>In this space. Can you put it on my calendar? old boys club, but five-year strategic plan. Digital literacy out of scope close the loop but quick-win your work on this project has been really impactful.</p>
+          <div id="miCaja" class="caja roja"></div>
+
+    </div>
+        
+    <div class="snap-section">
+          <h3>Section 03</h3>
+          <p>Offline this discussion Q1, or this is meaningless finance. What the products need full resourcing and support from a cross-functional team in order to be built, maintained, and evolved for drill down.</p>
+    </div>
+        
+    <div class="snap-section">
+          <h3>Section 04</h3>
+          <p>Product market fit disband the squad but rehydrate as needed game-plan. A loss a day will keep you focus incentivization, dunder mifflin.</p>
+          <div id="miOtraCaja" class="caja azul"></div>
+    </div>
+        
+    <div class="snap-section">
+          <h3>Section 05</h3>
+          <p>Please submit the sop and uat files by next monday your work on this project has been really impactful, so dog and pony show. Service as core,as power makes our brand run it up the flag pole can you slack it to me? yet waste of resources.</p>
+    </div> 
+        
+  </div>
+    
+    <script>
+        /*var elem = document.getElementById('sec1');
+        var clientRect = elem.getBoundingClientRect();
+        
+        console.log(clientRect.top);
+        console.log("hola");
+        
+        function isInViewport(elem) {
+            var distance = elem.getBoundingClientRect();
+            return (
+                distance.top < (window.innerHeight || document.documentElement.clientHeight) && distance.bottom > 0
+            );
+        }
+        if (isInViewport(elem)) {
+            // está en el viewport
+        } */
+
+        function cambiaVisibilidad(visible, elemento){
+        console.log("¿Elemento %s está visible?: %s", elemento.id, visible);
+        
+        }
+        
+        var miDiv = document.getElementById("miCaja");
+        var miOtroDiv = document.getElementById("miOtraCaja");
+        inViewportPartially(miDiv, cambiaVisibilidad);
+        inViewportTotally(miOtroDiv, cambiaVisibilidad);
+        
+    </script>
+</body>
+</html>
