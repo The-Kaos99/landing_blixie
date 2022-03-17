@@ -30,17 +30,17 @@ h2{
 
 
 /*nav*/
-.gris {
+.gris{
     /*opacidad 86, añadir 2 digitos*/
     background: linear-gradient(to bottom right, #addafb, #f580ff);
     /*background-color: rgba(0, 0, 0, 0);*/
 }
 
+
 .top-nav-collapse {
     /**/
     background: linear-gradient(to bottom right, #addafb, #f580ff) !important;
-    /*height: 10vh !important;*/
-    /**/
+    
 }
 /*para fonod de menu colapsado*/
 #collapsibleNavId{
