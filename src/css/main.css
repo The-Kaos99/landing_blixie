@@ -279,6 +279,7 @@ div.menu_lateral_h ul {
 #NFTs {
     height: 100vh !important;
     border: rgb(0, 4, 255) 5px dotted;
+    overflow: scroll;
 
 }
 
@@ -537,6 +538,15 @@ div#v2 .recuadro #character_container span.character {
     /*clase para char activo*/
     border: 1px solid red;
     /*width: 25%;*/
+}
+
+/*NFTs*/
+span.hide{
+    display: none;
+}
+.show {
+    display:block;
+    border: 1px solid red;
 }
 
 /*Seccion_About*/
