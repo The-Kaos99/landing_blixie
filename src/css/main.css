@@ -533,11 +533,46 @@ div#v2 .recuadro #character_container span.character {
         background-position: -784px;
     }
 }
-
-.test {
+.planets_container{
+    font-size:15px !important;
+}
+.test{
+    border: 1px solid green;
+}
+.margin1 {
     /*clase para char activo*/
-    border: 1px solid red;
     /*width: 25%;*/
+    margin-top: 25vh;
+}
+.margin2 {
+    /*clase para char activo*/
+    /*width: 25%;*/
+    margin-top: 20vh;
+}
+.margin3 {
+    /*clase para char activo*/
+    /*width: 25%;*/
+    margin-top: 15vh;
+}
+.margin4 {
+    /*clase para char activo*/
+    /*width: 25%;*/
+    margin-top: 10vh;
+}
+.margin5 {
+    /*clase para char activo*/
+    /*width: 25%;*/
+    margin-top: 24vh;
+}
+.margin6 {
+    /*clase para char activo*/
+    /*width: 25%;*/
+    margin-top: 18vh;
+}
+.margin7 {
+    /*clase para char activo*/
+    /*width: 25%;*/
+    margin-top: 10vh;
 }
 
 /*NFTs*/
