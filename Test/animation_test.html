@@ -71,13 +71,22 @@
             background-clip: border-box;/*se extiende hasta el limite externo del borde.*/
             background-size: 200% auto;/*alarga la largura del ancho del fondo, se ven menos colores del gradiente*/
             color: #fff;
-            background-clip: text;/*
+            background-clip: text;/*permite que una imagen de fondo sea recortada por un elemento de texto.*/
             text-fill-color: transparent;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;*/
+            -webkit-background-clip: text; /*creo...para distintos navegadores con webkit*/
+            -webkit-text-fill-color: transparent;
 
+            animation: textclip 2s linear;/*infinite*/
+            display: inline-block; /*para que?*/
+            /*font-size: 100px;*/
+            /*background-position: 0% center;*/
         } 
         
+        @keyframes textclip {
+            to {
+                background-position: 200% center;
+            }
+        }
 
    </style> 
 
