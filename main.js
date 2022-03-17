@@ -8,8 +8,8 @@ let planet_cols= document.querySelectorAll(".planet_col");/*añadirles clase*/
  //por defecto, tiene que efectuarse una vez al cargarse la página. podría llamarlo justo al cargar
  if(window.innerWidth<575){  //Para version movil
      //caja.innerHTML=menuLH;
-     menuLH.style.display="inline";
-     menuLa.style.display="none";
+    menuLH.style.display="inline";
+    menuLa.style.display="none";
 
      //a todas las columnas de planeta, añadir clase de boostrap
     planet_cols.forEach(function(col){
@@ -22,11 +22,11 @@ let planet_cols= document.querySelectorAll(".planet_col");/*añadirles clase*/
      menuLH.style.display="none";
      menuLa.style.display="block";
 
-      //a todas las columnas de planeta, quitar clase de boostrap
-      planet_cols.forEach(function(col){
-          col.classList.remove("justify-content-center");
-          col.classList.remove("d-flex");
-      });
+    //a todas las columnas de planeta, quitar clase de boostrap
+    planet_cols.forEach(function(col){
+        col.classList.remove("justify-content-center");
+        col.classList.remove("d-flex");
+    });
 
  } 
  
@@ -40,16 +40,27 @@ let planet_cols= document.querySelectorAll(".planet_col");/*añadirles clase*/
   
      
      //Version movil. que no sea visible el menu lateral h
-     if(window.innerWidth<575){
+    if(window.innerWidth<575){
          //caja.innerHTML=menuLH;
-         menuLH.style.display="inline";
-         menuLa.style.display="none";
+        menuLH.style.display="inline";
+        menuLa.style.display="none";
+
+          //a todas las columnas de planeta, añadir clase de boostrap
+        planet_cols.forEach(function(col){
+            col.classList.add("d-flex");
+            col.classList.add("justify-content-center");
+        });
      }
-     else{
-         menuLH.style.display="none";
-         menuLa.style.display="block";
+    else{
+        menuLH.style.display="none";
+        menuLa.style.display="block";
          
-     }
+        //a todas las columnas de planeta, quitar clase de boostrap
+        planet_cols.forEach(function(col){
+            col.classList.remove("justify-content-center");
+            col.classList.remove("d-flex");
+        });
+    }
  } 
 
 
