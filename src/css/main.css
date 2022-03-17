@@ -176,19 +176,20 @@ div.menu_lateral_h ul {
         width:60vw;
     }
 
-    div.text_2022{
+    p.text_2022{
         position: static;
         text-align: center;
         /*top:-22vh;*/
-        font-size: 45px !important;
+        font-size: 35px;
+        padding-bottom: 30px;
         
     }
-    div.text_2023{
+    p.text_2023{
         position: static;
         text-align: center;
        /* top:-21vh;*/
-        font-size: 25px;
-        
+        font-size: 35px;
+        padding-bottom: 30px;
     }
     .text_Metaverse{
     
@@ -197,6 +198,18 @@ div.menu_lateral_h ul {
         font-size: 50px !important;
         /*padding-left: 18%;*/
     } 
+    div.planet_col {
+        text-align: center;
+    } 
+    div.margin1 {
+        margin-top: 13vh; /*para quitar padding*/
+    }
+    div.margin2 {
+        margin-top: 16vh;
+    }
+    div.margin8 {
+        margin-top: 12vh;
+    }
     
 }
 

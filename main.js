@@ -12,10 +12,10 @@ let planet_cols= document.querySelectorAll(".planet_col");/*añadirles clase*/
     menuLa.style.display="none";
 
      //a todas las columnas de planeta, añadir clase de boostrap
-    planet_cols.forEach(function(col){
+   /* planet_cols.forEach(function(col){
         col.classList.add("d-flex");
         col.classList.add("justify-content-center");
-    });
+    });*/
 
  }
  else{
@@ -23,10 +23,10 @@ let planet_cols= document.querySelectorAll(".planet_col");/*añadirles clase*/
      menuLa.style.display="block";
 
     //a todas las columnas de planeta, quitar clase de boostrap
-    planet_cols.forEach(function(col){
+    /*planet_cols.forEach(function(col){
         col.classList.remove("justify-content-center");
         col.classList.remove("d-flex");
-    });
+    }); */
 
  } 
  
@@ -46,20 +46,20 @@ let planet_cols= document.querySelectorAll(".planet_col");/*añadirles clase*/
         menuLa.style.display="none";
 
           //a todas las columnas de planeta, añadir clase de boostrap
-        planet_cols.forEach(function(col){
+       /* planet_cols.forEach(function(col){
             col.classList.add("d-flex");
             col.classList.add("justify-content-center");
-        });
+        }); */
      }
     else{
         menuLH.style.display="none";
         menuLa.style.display="block";
          
         //a todas las columnas de planeta, quitar clase de boostrap
-        planet_cols.forEach(function(col){
+       /* planet_cols.forEach(function(col){
             col.classList.remove("justify-content-center");
             col.classList.remove("d-flex");
-        });
+        }); */
     }
  } 
 

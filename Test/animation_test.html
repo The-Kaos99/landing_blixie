@@ -9,7 +9,6 @@
            height:150px;
            width: 150px; /*2550 px totales*/
             background: url("BOMBAmulti5horizontal.png");/*orange;*/
-            
             /*background-position: 0px 0; */
             animation: cambiar 2s steps(17);/*infinite;*/
             border-top-style: red;
@@ -18,12 +17,8 @@
             height:150px;
             width: 150px; /*2550 px totales*/
             background-image: url("BOMBAmulti5horizontal.png");/*orange;*/
-            
-            /*background-position: 0px 0; */
+        
             animation: cambiar 2s steps(17);
-            /*border-style: hidden;*/
-            /*border: 1px solid red;*/
-           
             border-top: red;
             background-color: white;
 
@@ -57,48 +52,68 @@
             }
        }
 
-       #character_container {
-            border: 1px solid grey;
-            width:120px;
-            
-        }
+       /*subtitulo home*/
+       
+       .animate-character{
+            text-transform: uppercase;
+            background-image: linear-gradient(
+                -225deg,
+                #231557 0%,
+                #44107a 29%,
+                #ff1361 67%,
+                #fff800 100%
+            );
 
-        #character_container div.char{
-            border: 1px solid blue;
-            width: 30px;/*10vw;*/
-            height: 30px;/*10vh;*/
+            background-size: auto auto;
+            /*background-clip, especifica hasta donde se extiende el fondo ( background ) 
+            de un elemento, ya sea color o imagen. Por defecto el fondo 
+            ( background ) se extiende hasta el limite externo del borde*/
+            background-clip: border-box;/*se extiende hasta el limite externo del borde.*/
+            background-size: 200% auto;/*alarga la largura del ancho del fondo, se ven menos colores del gradiente*/
+            color: #fff;
+            background-clip: text;/*
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;*/
 
-            /*background-color: grey;*/
-            margin-bottom: 10px;
-        }
-        .recuadro{
-            border: 1px solid green;
-            float: left;
-            width: 300px;
-            height: 200px;
-        }
+        } 
+        
+
    </style> 
 
 
 </head>
 <body>
-    
-    <div class="ojo" ></div>
-    <img class="ojo2"></img>
-    <img class="ojo3"></img>
-    <span class="ojo4"></span>
+<!--___Animacion de un sprite___ -->
 
-    <div class="recuadro" ></div>
-        <div id="character_container" >
-            <div class="char" id="img0"></div>
-            <div class="char" id="img1"></div>
-            <div class="char" id="img2"></div>
-            <div class="char" id="img3"></div>
-            <!--<img class="character" id="img0" src="src/img/per_sonic.png" />-->
-            <!--<img class="character" id="img1" src="src/img/per_crash.png" />
-            <img class="character" id="img2" src="src/img/per_yoshi.png" />
-            <img class="character" id="img3" src="src/img/per_sonic.png" /> -->
+   <!-- <div class="ojo" ></div>
+    <img class="ojo2"></img>
+    <span class="ojo4"></span> -->
+
+<!-- __Animacion texto home__--> 
+
+<div class="container"> <!-- Estructura original-->
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <!--<h3 class="animate-charcter"> EKOSH</h3>>-->
+      </div>
+    </div>
+</div>
+<br>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        
+        <h1 class="animate-character">Wellcome to Blixieverse</h1>
+      
         </div>
     </div>
+  </div>
+
+
+
+
+    
 </body>
 </html>
