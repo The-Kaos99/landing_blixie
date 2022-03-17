@@ -219,26 +219,26 @@ div.menu_lateral_h ul {
 
 #Home {
     height: 100vh !important;
-    border: red 5px dotted;
+   /* border: red 5px dotted;*/
 
 }
 
 #Play_to_Earn {
     height: 100vh !important;
-    border: rgb(255, 187, 0) 5px dotted;
+   /* border: rgb(255, 187, 0) 5px dotted;*/
 
 }
 
 #NFTs {
     height: 100vh !important;
-    border: rgb(0, 4, 255) 5px dotted;
+   /* border: rgb(0, 4, 255) 5px dotted;*/
     overflow: scroll;
 
 }
 
 #Blix_Token {
     height: 100vh !important;
-    border: rgb(21, 255, 0) 5px dotted;
+   /* border: rgb(21, 255, 0) 5px dotted;*/
 }
 
 #Roadmap {
@@ -246,7 +246,11 @@ div.menu_lateral_h ul {
         url("../img/roadmap/estrellas.png"),
         url("../img/roadmap/background.png");
     height: 100vh !important;
-    border: rgb(38, 0, 255) 5px dotted;
+
+
+   /* border: rgb(38, 0, 255) 5px dotted;*/
+
+
     /* Para dejar la imagen de fondo centrada, vertical y horizontalmente*/
     background-position: center center;
     
@@ -267,24 +271,24 @@ div.menu_lateral_h ul {
 
 #About {
     height: 100vh !important;
-    border: rgb(255, 0, 0) 5px dotted;
+    /*border: rgb(255, 0, 0) 5px dotted;*/
     overflow-y: scroll;
 }
 
 #Parteners {
     height: 100vh !important;
-    border: rgb(0, 68, 255) 5px dotted;
+   /* border: rgb(0, 68, 255) 5px dotted;*/
     overflow-y: scroll;
 }
 
 #FAQ {
     height: 100vh !important;
-    border: rgb(255, 179, 0) 5px dotted;
+    /*border: rgb(255, 179, 0) 5px dotted;*/
 }
 
 .content_seccion {
     /* Estable el margen poara que el menu nop se coma parte de las secciones */
-    margin-top: 10vh;
+    margin-top: 10vh !important;
 }
 
 
