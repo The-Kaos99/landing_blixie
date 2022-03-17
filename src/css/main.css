@@ -332,9 +332,7 @@ div.menu_lateral_h ul {
     position: relative; /*para contenedor de ref de las pos absolutas de sus hijos*/
     color:#F781F3;
 }
-.test{
-   /* border: 1px solid green;*/
-}
+
 .margin1 {
     
     margin-top: 25vh;
