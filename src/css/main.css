@@ -9,9 +9,22 @@
          font-display: swap;
          font-style: normal;
 } 
+@font-face { /*Para version movil menu*/
+    font-family: 'CabinetGrotesk-Light';
+    src:url('../font/CabinetGrotesk_complete/Fonts/WEB/fonts/CabinetGrotesk-Light.woff') format('woff');
+         
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
 @font-face{
     font-family: "Neuropolitical Rg";
     src:url("../font/Neuropolitical-374143/Neuropolitical.ttf");
+
+}
+@font-face{
+    font-family: "Neuropolitical W00 Light";
+    src:url("../font/Neuropolitical-374143/Neuropolitical W00 Light.ttf");
 
 }
 
@@ -28,23 +41,33 @@ h2{
     display: none;
 }
 
-
 /*nav*/
 .gris{
-    /*opacidad 86, añadir 2 digitos*/
-    background: linear-gradient(to bottom right, #addafb, #f580ff);
-    /*background-color: rgba(0, 0, 0, 0);*/
+    /*establecer el fondo del menu, color...*/
+    background: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    font-family: "Neuropolitical W00 Light";
 }
-
-
+/*se añade al hacer scroll*/
 .top-nav-collapse {
-    /**/
-    background: linear-gradient(to bottom right, #addafb, #f580ff) !important;
-    
+   /* background: linear-gradient(to bottom right, #addafb, #f580ff) !important;*/
+   background: rgba(70, 91, 187, 0.418);
 }
-/*para fonod de menu colapsado*/
-#collapsibleNavId{
-    /*background-color: red;*/
+.navbar-dark{
+    font-size: 24px;
+}
+
+.scrolling-navbar{
+   /*para que era?*/
+    /* padding-top: 0;
+    padding-bottom: 0;*/
+}
+.sombra-text2{ 
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 
+    0 2px 0 #000, 0 -2px 0 #000, 
+    1px 1px #000, -1px -1px 0 #000, 
+    1px -1px 0 #000, -1px 1px 0 #000;
+
 }
 
 
@@ -198,6 +221,15 @@ div.menu_lateral_h ul {
 
 /*modo movil*/
 @media screen and (max-width: 575px) {
+    /*navbar*/
+    .gris{
+        background: linear-gradient(to bottom right, #addafb, #f580ff);
+        font-family: 'CabinetGrotesk-Light';
+    }
+    
+    .top-nav-collapse {
+    background: linear-gradient(to bottom right, #addafb, #f580ff);
+    }
     
     /*sec 3  NFts*/
     div#NFTs div.col-12 p{
