@@ -4,6 +4,8 @@
  let menuLa=document.querySelector(".menu_lateral");
 
 let planet_cols= document.querySelectorAll(".planet_col");/*añadirles clase*/
+let planet_imgs= document.querySelectorAll(".planet_col img");
+let planet_ps= document.querySelectorAll(".planet_col p");
 
  //por defecto, tiene que efectuarse una vez al cargarse la página. podría llamarlo justo al cargar
  if(window.innerWidth<575){  //Para version movil
@@ -16,6 +18,18 @@ let planet_cols= document.querySelectorAll(".planet_col");/*añadirles clase*/
         col.classList.add("d-flex");
         col.classList.add("justify-content-center");
     });*/
+
+    /*quitar animacion para planetas */
+    planet_imgs.forEach(function(img){
+        img.removeAttribute("data-aos");
+        img.removeAttribute("data-aos-duration");
+        img.removeAttribute("data-aos-delay");
+        img.removeAttribute("data-aos-easing");
+    });
+    planet_ps.forEach(function(p){
+        p.removeAttribute("data-aos");
+        p.removeAttribute("data-aos-delay");
+    });
 
  }
  else{

@@ -15,9 +15,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!-- AOS.js-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
     <!-- CSS Personalizado -->
     <link href="src/css/main.css" rel="stylesheet">
-
+    
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
 
     <!-- Google Tag Manager -->
@@ -141,8 +143,9 @@
                 <!-- boton superior-->
                 <div class="row pos-text" id="btns_superiores">
                     <div class="col-12">
-                        <h1 class="h1 mt-3 mb-3 subtitle animate-char">Wellcome to Blixieverse</h1>
-                        <div class="mt-5 btn_buyBlix">
+                        <h1 class="h1 mt-3 mb-3 subtitle animate-char" data-aos="zoom-out-up" 
+                        data-aos-duration="2000">Wellcome to Blixieverse</h1>
+                        <div class="mt-5 btn_buyBlix" data-aos="zoom-out" data-aos-duration="1800" data-aos-delay="800" >
 
                             <a href="#"><button type="button" class="btn btn-secondary btn-rounded mt-5">Buy
                                     BLIX</button></a>
@@ -156,11 +159,10 @@
                 <div class="row mt-5" id="btns_inferiores">
                     <div class="col-12 mt-4">
 
-                        <a href="#"><button type="button"
-                                class="btn btn-secondary btn-rounded mt-5">Whitepaper</button></a>
-                        <a href="#"><button type="button" class="btn btn-secondary btn-rounded mt-5">The
-                                Proyect</button></a>
-
+                        <a href="#">
+                            <button type="button" class="btn btn-secondary btn-rounded mt-5" >Whitepaper</button></a>
+                        <a href="#">
+                            <button type="button" class="btn btn-secondary btn-rounded mt-5" >TheProyect</button></a>
                     </div>
                 </div>
 
@@ -174,8 +176,14 @@
         <div class="container-fluid text-center" id="Play_to_Earn">
             <div class="content_seccion">
                 <div class="row text-center">
-                    <div class="col-12">
-                        <h2 class="h1 mt-3 mb-3">Play to earn</h2>
+                    <div class="col-12" >
+                        <h2 class="h1 mt-3 mb-3" data-aos="slide-right" data-aos-duration="2500" >Play to earn</h2>
+                    </div>
+                    <div class="col-6">
+
+                    </div>
+                    <div class="col-6">
+
                     </div>
 
                 </div>
@@ -187,7 +195,7 @@
             <div class="content_seccion container">
                 <div class="row text-center">
                     <div class="col-12">
-                        <h2 class="h1 mt-3 mb-3">NFTs</h2>
+                        <h2 class="h1 mt-3 mb-3" data-aos="slide-left" data-aos-duration="2500">NFTs</h2>
                     </div>
                     <div class="col-12 mb-4">
                         <p>Lorem Ipsum es simplemente el texto de relleno de las
@@ -296,7 +304,7 @@
             <div class="content_seccion">
                 <div class="row text-center">
                     <div class="col-12">
-                        <h2 class="h1 mt-3 mb-3">BLIX Token</h2>
+                        <h2 class="h1 mt-3 mb-3" data-aos="slide-right" data-aos-duration="2500">BLIX Token</h2>
                     </div>
                 </div>
             </div>
@@ -306,7 +314,7 @@
             <div class="content_seccion">
                 <div class="row text-center">
                     <div class="col-12">
-                        <h2 class="h1 mt-3 mb-3 text-light">Roadmap</h2>
+                        <h2 class="h1 mt-3 mb-3 text-light" data-aos="slide-left" data-aos-duration="2500">Roadmap</h2>
                     </div>
                 </div>
                 <div class="row planets_container">
@@ -319,36 +327,48 @@
 
                     <div class="col-md-1 margin1 planet_col"><!-- d-flex justify-content-center, añadirlas para movil-->
                         <p class="text_2022">2022</p>
-                        <p><b>Q1</b><br>Web 1st Blixie Set BlixieCrush</p>
-                        <img src="src/img/roadmap/Planeta1.png" class="img-fluid" alt="" srcset="">
+                        <span>Q1</span>
+                        <p data-aos="zoom-in" data-aos-delay="2800">Web 1st Blixie Set BlixieCrush</p>
+                        <img src="src/img/roadmap/Planeta1.png" class="img-fluid testx" alt="" srcset="" 
+                        data-aos="fade-up-right" data-aos-duration="2000">
                     </div>
                     <div class="col-md-1 margin2 planet_col">
-                        <p><b>Q2</b><br>2nd Blixie Set 1st </p>
-                        <img src="src/img/roadmap/Planeta2.png" class="img-fluid" alt="" srcset="">
+                        <span>Q2</span>
+                        <p data-aos="zoom-in" data-aos-delay="2800">2nd Blixie Set 1st </p>
+                        <img src="src/img/roadmap/Planeta2.png" class="img-fluid" alt="" srcset=""
+                        data-aos="fade-down-right" data-aos-duration="2000" data-aos-delay="100">
                     </div>
                     <div class="col-md-1 margin3 planet_col">
-                        <p><b>Q3</b><br>Web 1st Blixie Set BlixieCrush</p>
-                        <img src="src/img/roadmap/Planeta3.png" class="img-fluid" alt="" srcset="">
+                        <span>Q3</span>
+                        <p data-aos="zoom-in" data-aos-delay="2800">Web 1st Blixie Set BlixieCrush</p>
+                        <img src="src/img/roadmap/Planeta3.png" class="img-fluid" alt="" srcset=""
+                        data-aos="fade-down-right" data-aos-duration="2000" data-aos-delay="1000">
                     </div>
                     <div class="col-md-1 margin4 planet_col">
-                        <p ><b>Q4</b><br>Web 1st Blixie Set BlixieCrush</p>
-                        <img src="src/img/roadmap/Planeta4.png" class="img-fluid" alt="" srcset="">
+                        <span>Q4</span>
+                        <p data-aos="zoom-in" data-aos-delay="2800" >Web 1st Blixie Set BlixieCrush</p>
+                        <img src="src/img/roadmap/Planeta4.png" class="img-fluid" alt="" srcset=""
+                        data-aos="fade-down-right" data-aos-duration="2000" data-aos-delay="1300" data-aos-easing="ease-out-back">
                     </div>
                     <div class="col-md-1 margin5 planet_col">
                         <p class="text_2023">2023</p>
-                        <img src="src/img/roadmap/Planeta5.png" class="img-fluid" alt="" srcset="">
+                        <img src="src/img/roadmap/Planeta5.png" class="img-fluid" alt="" srcset=""
+                        data-aos="fade-up-left" data-aos-duration="2000" data-aos-delay="1300" data-aos-easing="ease-out-back">
                         <p><b>Q1</b></p>
                     </div>
                     <div class="col-md-1 margin6 planet_col">
-                        <img src="src/img/roadmap/Planeta6.png" class="img-fluid" alt="" srcset="">
+                        <img src="src/img/roadmap/Planeta6.png" class="img-fluid" alt="" srcset=""
+                        data-aos="fade-up-left" data-aos-duration="2000"  data-aos-delay="1000">
                         <p><b>Q2</b></p>
                     </div>
                     <div class="col-md-1 margin7 planet_col" >
-                        <img src="src/img/roadmap/Planeta7.png" class="img-fluid" alt="" srcset="">
+                        <img src="src/img/roadmap/Planeta7.png" class="img-fluid" alt="" srcset=""
+                        data-aos="fade-up-left" data-aos-duration="2000" data-aos-delay="400">
                         <p><b>Q3</b></p>
                     </div>
-                    <div class="col-md-1 margin8 planet_col">
-                        <img src="src/img/roadmap/Planeta8.png" class="img-fluid" alt="" srcset="">
+                    <div class="col-md-1 margin8 planet_col" >
+                        <img src="src/img/roadmap/Planeta8.png" class="img-fluid" alt="" srcset=""
+                        data-aos="fade-down-left" data-aos-duration="2000">
                         <p><b>Q4</b></p>
                     </div>
 
@@ -364,7 +384,7 @@
         <div class="container-fluid " id="About">
             <div class="content_seccion container">
                 <div class="col-12 text-center">
-                    <h2 class="h1 mt-3 mb-3">About</h2>
+                    <h2 class="h1 mt-3 mb-3" data-aos="slide-right" data-aos-duration="2500">About</h2>
                 </div>
                 <div class="row text-lg-center">
                     <div class="col-md-2">
@@ -549,7 +569,7 @@
             <div class="content_seccion container">
                 <div class="row text-center">
                     <div class="col-md-12">
-                        <h2 class="h1 mt-3 mb-3">Partners</h2>
+                        <h2 class="h1 mt-3 mb-3" data-aos="slide-left" data-aos-duration="2500">Partners</h2>
                     </div>
                 </div>
                 <div class="row text-center">
@@ -690,7 +710,7 @@
             <div class="content_seccion">
                 <div class="row text-center">
                     <div class="col-12">
-                        <h2 class="h1 mt-3 mb-3">FAQ</h2>
+                        <h2 class="h1 mt-3 mb-3" data-aos="slide-right" data-aos-duration="2500">FAQ</h2>
                     </div>
                 </div>
             </div>
@@ -699,185 +719,17 @@
     </div>
     <!--</div>-->
     <!-- snap_container -->
-    <script>
 
+    
+
+    <!-- AOS.js-->
+    <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
-
-    <!--
-    <script>
-        var elemento = document.getElementById('Home');
-        var posicion = elemento.getBoundingClientRect();
-        var elemento2 = document.getElementById('Play_to_Earn');
-        var posicion2 = elemento.getBoundingClientRect();
-        //console.log(posicion.top, posicion.right, posicion.bottom, posicion.left);
-        console.log("obj1 "+posicion.top, posicion.bottom);
-        //console.log("obj2 "+posicion.top, posicion.bottom);
-        var scrollPos = 0; //para saber la direccion de scroll
-        //console.log(document.documentElement.clientHeight);
-
-        var divHeight;
-        var obj = document.getElementById('contenedor');
-
-        if(obj.offsetHeight){
-            divHeight=obj.offsetHeight;
-        }
-        else if(obj.style.pixelHeight){
-            divHeight=obj.style.pixelHeight;
-        }    
-        console.log("contenedor altura"+divHeight);
-
-        //window.scrollTo(0, 0);
-        console.log(window.pageYOffset);
-        var contador= 0;
-        window.addEventListener('scroll', function() {
-           // document.getElementById('test').innerHTML = window.pageYOffset + 'px';
-           //console.log(window.pageYOffset + 'px');
-            //necsito saber las posiciones de cada elemento
-            //window.scrollTo(0, 100);
-            //window.scrollBy(0, 20);
-            //console.log(window.pageYOffset);
-            //scrollWin();
-
-            console.log(window.pageYOffset);
-            /*
-            if ( (document.body.getBoundingClientRect()).top > scrollPos){
-                // ARRIBA
-                console.log("arriba");
-                //console.log(posicion.top, posicion.right, posicion.bottom, posicion.left);
-                //console.log("client S: "+(document.body.getBoundingClientRect()).top);
-
-            }
-            else{
-                // ABAJO
-                console.log("abajo");
-                scrollPos = (document.body.getBoundingClientRect()).top;
-                //console.log("client B: "+(document.body.getBoundingClientRect()).top);
-            } */
-            
-            var tamContenedor= (posicion.bottom - posicion.top)/4;
-            //console.log("contenedor "+ tamContenedor);
-            var tamContenedor2= divHeight/8;
-
-            if(window.pageYOffset>152 && window.pageYOffset <608 ){
-                //window.location="#NFTs";
-                console.log("esta dentro");
-                if(contador==0){
-                    console.log("me muevo");
-                    contador=1;
-                   /* var elemento2 = document.getElementById('Play_to_Earn');
-                    var posicion2 = elemento.getBoundingClientRect();*/
-
-                    //console.log("obj2 "+posicion.top, posicion.bottom);
-                   // window.location="#Play_to_Earn";
-                   window.scrollTo(0,608);
-                }
-        
-            } else if(window.pageYOffset>760 && window.pageYOffset <1216){
-                console.log("esta dentro");
-                if(contador==0){
-                    console.log("me muevo");
-                    contador=1;
-                   /* var elemento2 = document.getElementById('Play_to_Earn');
-                    var posicion2 = elemento.getBoundingClientRect();*/
-
-                    //console.log("obj2 "+posicion.top, posicion.bottom);
-                    window.location="#NFTs";
-                }
-                
-            }else{
-                console.log("esta fuera");
-                contador=0;
-            }
-            /*
-            if(pageYOffset > document.documentElement.clientHeight/3){
-                console.log(document.documentElement.clientHeight);
-                console.log("me muevo");
-            }else{
-                console.log("no");
-            } */
-        }); 
-        
-        function scrollWin() {
-            //window.scrollTo(0, 120);
-            //console.log(window.pageYOffset); /*me da la posicion de la ventana en y*/
-            //console.log(document.body.scrollTop );
-            window.location="#NFTs";
-        } 
-
-
-        /*Provando evento onscroll*/
-        //window.onscroll = function() {myFunction()};
-        /*
-        function myFunction() {
-
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                //document.getElementById("myP").className = "test";
-                console.log("hola");
-            } else {
-                //document.getElementById("myP").className = "";
-            }
-        } */
-
-        //var elemento= document.getElementById("titulo"); 
-        //var miCaja = elemento.getBoundingClientRect();
-        //console.log(miCaja.top);
-        //console.log(elemento.id);
-        /*
-        function cambiaVisibilidad(visible, elemento){
-            console.log("¿Elemento %s está visible?: %s", elemento.id, visible);
-        }
-    
-        var miDiv = document.getElementById("miCaja");
-        //var miOtroDiv = document.getElementById("miOtraCaja");
-
-        inViewportPartially(miDiv, cambiaVisibilidad);
-        inViewportTotally(miDiv, cambiaVisibilidad); */
-
-
-
-        /*
-        $(document).ready(function () {
-        
-          $('a').printThis();
-    
-      }); */
-        /*
-        $(document).ready(function() {
-            $(document).on("scroll", onScroll);
-            console.log(event);
-
-            
-
-            function onScroll(event){
-               
-                var scrollPos = $(document).scrollTop();
-               
-
-                $('a').each(function () {
-                    var currLink = $(this);
-                    var refElement = $(currLink.attr("href"));
-                    console.log("hola");
-
-                    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-                        $('a').removeClass("active");
-                        currLink.addClass("active");
-                    }
-                    else{
-                        currLink.removeClass("active");
-                    }
-                    
-                });
-                
-            } 
-
-           
-        }) */
- 
-    </script> -->
-
-    <script type="text/javascript" src="main.js"> </script>
-
+    <!-- Js personalizado-->
+    <script type="text/javascript" src="src/js/main.js"> </script>
     <!-- MDB -->
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

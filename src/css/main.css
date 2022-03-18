@@ -130,8 +130,8 @@ h2{
     text-transform: uppercase;
     background-image: linear-gradient(
         -225deg,
-        #231557 0%,
-        #44107a 29%,
+        #0b9ba0 0%,
+        #8364cc 29%,
         #ff1361 67%,
         #fff800 100%
     );
@@ -148,7 +148,7 @@ h2{
 
     animation: textclip 2s linear ;
     animation-iteration-count:4;/*or infinite*/
-    /*animation-direction:alternate;*/
+    animation-delay: 1.8s;
     display: inline-block; 
 } 
 
