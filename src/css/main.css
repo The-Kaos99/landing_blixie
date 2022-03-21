@@ -154,8 +154,8 @@ h2 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    animation: textclip 2s linear;
-    animation-iteration-count: 4;
+    animation: textclip 2s linear infinite;
+    /*animation-iteration-count: 4;*/
     /*or infinite*/
     animation-delay: 1.8s;
     display: inline-block;
