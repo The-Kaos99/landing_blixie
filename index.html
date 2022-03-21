@@ -19,19 +19,20 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- CSS Personalizado -->
     <link href="src/css/main.css" rel="stylesheet">
-    <script src="src\js\panelSnap.js" defer></script>
+
+    <script src="src\js/panelSnap.js" defer></script>
     <script>
         var menu, menuItems, panelSnapInstance;
     
         document.addEventListener("DOMContentLoaded", function () {
-          menu = document.querySelector('.menu');
-          menuItems = menu.querySelectorAll('button');
+          menu = document.querySelector('.menuUl');
+          menuItems = menu.querySelectorAll('a');
     
           panelSnapInstance = new PanelSnap();
           panelSnapInstance.on('activatePanel', activateMenuItem);
     
           menuItems.forEach(function (menuItem) {
-            menuItem.addEventListener('click', onButtonClick);
+          menuItem.addEventListener('click', onButtonClick);
           })
         });
     
@@ -47,11 +48,11 @@
     
         function onButtonClick(e) {
           var panelName = e.target.getAttribute('data-panel')
-          var panel = document.querySelector('div[data-panel="' + panelName + '"]');
+          var panel = document.querySelector('section[data-panel="' + panelName + '"]');
           panelSnapInstance.snapToPanel(panel);
           console.log(panel);
         }
-      </script>
+      </script> 
 
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
 
@@ -69,7 +70,7 @@
 
 </head>
 
-<body class="bg-body" data-spy="scroll" data-target="#menu">
+<body class="bg-body" data-spy="scroll" data-target="#menu" >
 
     <div class="container-fluid ">
         <!-- barra de menu -->
@@ -87,7 +88,7 @@
                 </button>
                 <!--Menu -->
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="nav-pills navbar-nav mr-auto mt-2 mt-lg-0  justify-content-center mx-auto " id="">
+                    <ul class="nav-pills navbar-nav mr-auto mt-2 mt-lg-0  justify-content-center mx-auto menuUl" id="">
                         <!-- mx-auto-->
                         <li class="nav-item">
                             <!-- tenia el active-->
@@ -162,11 +163,11 @@
     </div> <!-- container-fluid, barra de menu -->
 
 
-    <div class="snap_container" id="contenedor" ->
+   <!-- <div class="snap_container" id="contenedor"> Lo quito por el momento -->
         <!--Contenedor de todas las secciones-->
 
         <!--seccion del video -->
-        <div class="container-fluid text-light text-center px-0 " id="Home" data-panel="Home">
+        <section class="container-fluid text-light text-center px-0 " id="Home" data-panel="Home">
             <div class="home-vi">
                 <video id="background-video-home" loop muted poster="src/img/home-bg.jpeg">
                     <!--autoplay -->
@@ -201,12 +202,12 @@
 
             </div>
             <!--home-vi -->
-        </div>
+        </section>
         <!--container-fluid, seccion del video -->
 
 
         <!-- Resto de secciones-->
-        <div class="container-fluid text-center" id="Play_to_Earn" data-panel="Play_to_Earn">
+        <section class="container-fluid text-center" id="Play_to_Earn" data-panel="Play_to_Earn">
             <div class="content_seccion">
                 <div class="row text-center">
                     <div class="col-12">
@@ -222,9 +223,9 @@
                 </div>
             </div>
 
-        </div><!-- play to earn -->
+        </section><!-- play to earn -->
 
-        <div class="container-fluid " id="NFTs">
+        <section class="container-fluid " id="NFTs" data-panel="NFTs">
             <div class="content_seccion container">
                 <div class="row text-center">
                     <div class="col-12">
@@ -326,9 +327,9 @@
                 </div>
 
             </div>
-        </div>
+        </section>
 
-        <div class="container-fluid " id="Blix_Token">
+        <section class="container-fluid " id="Blix_Token" data-panel="Blix_Token">
             <div class="content_seccion">
                 <div class="row text-center">
                     <div class="col-12">
@@ -337,8 +338,8 @@
                 </div>
             </div>
 
-        </div>
-        <div class="container-fluid" id="Roadmap">
+        </section>
+        <section class="container-fluid" id="Roadmap" data-panel="Roadmap">
             <div class="content_seccion">
                 <div class="row text-center">
                     <div class="col-12">
@@ -410,9 +411,9 @@
                     </div>
                 </div> <!-- row-->
             </div>
-        </div>
+        </section>
 
-        <div class="container-fluid " id="About">
+        <section class="container-fluid " id="About" data-panel="About">
             <div class="content_seccion container">
                 <div class="col-12 text-center">
                     <h2 class="h1 mt-3 mb-3" data-aos="slide-right" data-aos-duration="2500">About</h2>
@@ -480,9 +481,9 @@
                     </div>
                     <div class="col-md-2">
                         <div class="card m-2 transparent">
-                            <img class="card-img-top rounded-circle" src="src/img/team/EstefaniaFoto.png"
+                            <img class="card-img-top rounded-circle" src=""
                                 onmouseover="this.src='src/img/minis/mini6.png';"
-                                onmouseout="this.src='src/img/team/EstefaniaFoto.png';" alt="Card image cap">
+                                onmouseout="this.src='';" alt="Card image cap">
                             <div class="card-body">
                                 <h4 class="card-title">Estefanía Gómez Sanz - Art. D.</h4>
 
@@ -547,9 +548,9 @@
                 </div>
 
             </div>
-        </div>
+        </section>
 
-        <div class="container-fluid" id="Parteners">
+        <section class="container-fluid" id="Parteners" data-panel="Parteners">
             <div class="content_seccion container">
                 <div class="row text-center">
                     <div class="col-md-12">
@@ -584,9 +585,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="container-fluid" id="FAQ">
+        <section class="container-fluid" id="FAQ" data-panel="FAQ">
             <div class="content_seccion container">
                 <div class="row text-center">
                     <div class="col-12">
@@ -655,11 +656,17 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-    </div>
+   <!--</div>-->
+
     <!--</div>-->
     <!-- snap_container -->
+    <script>
+        /*
+        menu = document.querySelector('.menuUl');
+        console.log(menu);*/
+    </script>
 
 
 
