@@ -1,38 +1,44 @@
-
-
 @font-face {
     font-family: 'CabinetGrotesk-Variable';
-    src: /*url('../font/CabinetGrotesk_complete/Fonts/WEB/fonts/CabinetGrotesk-Variable.woff2') format('woff2'),*/
-         url('../font/CabinetGrotesk_complete/Fonts/WEB/fonts/CabinetGrotesk-Variable.woff') format('woff');
-         /*url('../font/CabinetGrotesk_complete/Fonts/WEB/fonts/CabinetGrotesk-Variable.ttf') format('truetype');*/
-         font-weight: 100 900;
-         font-display: swap;
-         font-style: normal;
-} 
-@font-face { /*Para version movil menu*/
+    src:
+        /*url('../font/CabinetGrotesk_complete/Fonts/WEB/fonts/CabinetGrotesk-Variable.woff2') format('woff2'),*/
+        url('../font/CabinetGrotesk_complete/Fonts/WEB/fonts/CabinetGrotesk-Variable.woff') format('woff');
+    /*url('../font/CabinetGrotesk_complete/Fonts/WEB/fonts/CabinetGrotesk-Variable.ttf') format('truetype');*/
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    /*Para version movil menu*/
     font-family: 'CabinetGrotesk-Light';
-    src:url('../font/CabinetGrotesk_complete/Fonts/WEB/fonts/CabinetGrotesk-Light.woff') format('woff');
-         
+    src: url('../font/CabinetGrotesk_complete/Fonts/WEB/fonts/CabinetGrotesk-Light.woff') format('woff');
+
     font-weight: 300;
     font-display: swap;
     font-style: normal;
 }
-@font-face{
+
+@font-face {
     font-family: "Neuropolitical Rg";
-    src:url("../font/Neuropolitical-374143/Neuropolitical.ttf");
+    src: url("../font/Neuropolitical-374143/Neuropolitical.ttf");
 
 }
-@font-face{
+
+@font-face {
     font-family: "Neuropolitical W00 Light";
-    src:url("../font/Neuropolitical-374143/Neuropolitical W00 Light.ttf");
+    src: url("../font/Neuropolitical-374143/Neuropolitical W00 Light.ttf");
 
 }
 
 body {
     position: relative;
     font-family: "CabinetGrotesk-Variable";
+    min-height: 100vh;
+    
 }
-h2{
+
+h2 {
     font-family: "Neuropolitical Rg";
 }
 
@@ -42,31 +48,34 @@ h2{
 }
 
 /*nav*/
-.gris{
+.gris {
     /*establecer el fondo del menu, color...*/
     background: rgba(0, 0, 0, 0);
     box-shadow: none;
     font-family: "Neuropolitical W00 Light";
 }
+
 /*se añade al hacer scroll*/
 .top-nav-collapse {
-   /* background: linear-gradient(to bottom right, #addafb, #f580ff) !important;*/
-   background: rgba(70, 91, 187, 0.418);
+    /* background: linear-gradient(to bottom right, #addafb, #f580ff) !important;*/
+    background: rgba(70, 91, 187, 0.418);
 }
-.navbar-dark{
+
+.navbar-dark {
     font-size: 24px;
 }
 
-.scrolling-navbar{
-   /*para que era?*/
+.scrolling-navbar {
+    /*para que era?*/
     /* padding-top: 0;
     padding-bottom: 0;*/
 }
-.sombra-text2{ 
-    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 
-    0 2px 0 #000, 0 -2px 0 #000, 
-    1px 1px #000, -1px -1px 0 #000, 
-    1px -1px 0 #000, -1px 1px 0 #000;
+
+.sombra-text2 {
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000,
+        0 2px 0 #000, 0 -2px 0 #000,
+        1px 1px #000, -1px -1px 0 #000,
+        1px -1px 0 #000, -1px 1px 0 #000;
 
 }
 
@@ -125,32 +134,32 @@ h2{
     font-size: 55px;
     margin-top: 180px !important;
 }
+
 /*animar texto welcome*/
-.animate-char{
+.animate-char {
     text-transform: uppercase;
-    background-image: linear-gradient(
-        -225deg,
-        #0b9ba0 0%,
-        #8364cc 29%,
-        #ff1361 67%,
-        #fff800 100%
-    );
+    background-image: linear-gradient(-225deg,
+            #0b9ba0 0%,
+            #8364cc 29%,
+            #ff1361 67%,
+            #fff800 100%);
 
     background-size: auto auto;
-    
+
     background-clip: border-box;
     background-size: 200% auto;
     color: #fff;
     background-clip: text;
     text-fill-color: transparent;
-    -webkit-background-clip: text; 
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    animation: textclip 2s linear ;
-    animation-iteration-count:4;/*or infinite*/
+    animation: textclip 2s linear;
+    animation-iteration-count: 4;
+    /*or infinite*/
     animation-delay: 1.8s;
-    display: inline-block; 
-} 
+    display: inline-block;
+}
 
 @keyframes textclip {
     to {
@@ -221,60 +230,70 @@ div.menu_lateral_h ul {
 
 /*modo movil*/
 @media screen and (max-width: 575px) {
+
     /*navbar*/
-    .gris{
+    .gris {
         background: linear-gradient(to bottom right, #addafb, #f580ff);
         font-family: "Neuropolitical W00 Light";
     }
-    
+
     .top-nav-collapse {
-    background: linear-gradient(to bottom right, #addafb, #f580ff);
-    }
-    
-    /*sec 3  NFts*/
-    div#NFTs div.col-12 p{
-        font-size: 15px;
-    }
-    /*sec  Roadmap*/
-    div.planets_container img{
-        width:60vw;
+        background: linear-gradient(to bottom right, #addafb, #f580ff);
     }
 
-    p.text_2022{
+    /*sec 3  NFts*/
+    div#NFTs div.col-12 p {
+        font-size: 15px;
+    }
+
+    /*sec  Roadmap*/
+    div.planets_container img {
+        width: 60vw;
+    }
+
+    p.text_2022 {
         position: static;
         text-align: center;
         /*top:-22vh;*/
         font-size: 35px;
         padding-bottom: 30px;
-        
+
     }
-    p.text_2023{
+
+    p.text_2023 {
         position: static;
         text-align: center;
-       /* top:-21vh;*/
+        /* top:-21vh;*/
         font-size: 35px;
         padding-bottom: 30px;
     }
-    .text_Metaverse{
-    
-        right: 16% !important;/*20vw !important;*/
+
+    .text_Metaverse {
+
+        right: 16% !important;
+        /*20vw !important;*/
         top: 10vh !important;
         font-size: 50px !important;
         /*padding-left: 18%;*/
-    } 
+    }
+
     div.planet_col {
         text-align: center;
-    } 
-    div.margin1 {
-        margin-top: 13vh; /*para quitar padding*/
     }
+
+    div.margin1 {
+        margin-top: 13vh;
+        /*para quitar padding*/
+    }
+
     div.margin2 {
         margin-top: 16vh;
     }
+
     div.margin8 {
         margin-top: 12vh;
     }
-    
+
 }
 
 /*Adaptar la posicion del boton byBlix en fucnión del subtitulo, welcome...*/
@@ -320,7 +339,7 @@ div.menu_lateral_h ul {
     border: rgb(38, 0, 255) 5px dotted;
     /* Para dejar la imagen de fondo centrada, vertical y horizontalmente*/
     background-position: center center;
-    
+
 
     /* Para que la imagen de fondo no se repita */
     background-repeat: no-repeat;
@@ -360,18 +379,18 @@ div.menu_lateral_h ul {
 
 
 /*_Aplicando scroll_snap*/
-/*.snap_container{
+.snap_container {
 
- height: 100vh;
- overflow: auto;  
- scroll-snap-type: y mandatory; 
-}*/
+    /*height: 100vh; */
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
 
-/*
-#Home, #Play_to_Earn,#NFTs, #Blix_Token, #Roadmap,#About, #Parteners, #FAQ{
-   scroll-snap-align: center;
 
-} */
+#Home, #Play_to_Earn, #NFTs, #Blix_Token, #Roadmap, #About, #Parteners, #FAQ {
+    scroll-snap-align: center;
+
+}
 
 
 /*__Seccion PLAY TO EARN*/
@@ -394,66 +413,78 @@ div.menu_lateral_h ul {
 
 
 /*Roadmap*/
-.planets_container{
-    font-size:18px ;
-    position: relative; /*para contenedor de ref de las pos absolutas de sus hijos*/
-    color:#F781F3;
+.planets_container {
+    font-size: 18px;
+    position: relative;
+    /*para contenedor de ref de las pos absolutas de sus hijos*/
+    color: #F781F3;
 }
-.test{
+
+.test {
     border: 1px solid green;
 }
+
 .margin1 {
-    
+
     margin-top: 25vh;
     position: relative;
 }
 
 .margin2 {
-    
+
     margin-top: 20vh;
 }
+
 .margin3 {
-    
+
     margin-top: 15vh;
 }
+
 .margin4 {
-    
+
     margin-top: 10vh;
 }
+
 .margin5 {
-    
+
     margin-top: 24vh;
 }
+
 .margin6 {
-    
+
     margin-top: 18vh;
 }
+
 .margin7 {
-    
+
     margin-top: 10vh;
 }
-.text_2022{
+
+.text_2022 {
     position: absolute;
-    top:-22vh;
+    top: -22vh;
     font-size: 25px;
     font-weight: bold;
 }
-.text_2023{
+
+.text_2023 {
     position: absolute;
-    top:-21vh;
+    top: -21vh;
     font-size: 25px;
     font-weight: bold;
 }
-.text_Metaverse{
+
+.text_Metaverse {
     position: absolute;
     right: 20vw;
     top: 45vh;
     font-size: 30px;
     font-weight: bold;
-} 
-.planet_col b{
+}
+
+.planet_col b {
     font-weight: bold;
-} 
+}
 
 /*NFTs*/
 
@@ -463,4 +494,4 @@ div.menu_lateral_h ul {
 .transparent {
     background-color: rgba(0, 0, 0, 0);
     box-shadow: none;
-} 
+}

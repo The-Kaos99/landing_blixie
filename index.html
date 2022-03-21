@@ -19,6 +19,39 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- CSS Personalizado -->
     <link href="src/css/main.css" rel="stylesheet">
+    <script src="src\js\panelSnap.js" defer></script>
+    <script>
+        var menu, menuItems, panelSnapInstance;
+    
+        document.addEventListener("DOMContentLoaded", function () {
+          menu = document.querySelector('.menu');
+          menuItems = menu.querySelectorAll('button');
+    
+          panelSnapInstance = new PanelSnap();
+          panelSnapInstance.on('activatePanel', activateMenuItem);
+    
+          menuItems.forEach(function (menuItem) {
+            menuItem.addEventListener('click', onButtonClick);
+          })
+        });
+    
+        function activateMenuItem(panel) {
+          menuItems.forEach(function (menuItem) {
+            menuItem.classList.remove('active');
+          });
+    
+          var panelName = panel.getAttribute('data-panel')
+          var menuItem = menu.querySelector('a[data-panel="' + panelName + '"]');
+          menuItem.classList.add('active');
+        }
+    
+        function onButtonClick(e) {
+          var panelName = e.target.getAttribute('data-panel')
+          var panel = document.querySelector('div[data-panel="' + panelName + '"]');
+          panelSnapInstance.snapToPanel(panel);
+          console.log(panel);
+        }
+      </script>
 
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
 
@@ -58,28 +91,28 @@
                         <!-- mx-auto-->
                         <li class="nav-item">
                             <!-- tenia el active-->
-                            <a class="nav-link active" href="#Home">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link active" href="#Home" data-panel="Home">Home <span class="sr-only" >(current)</span></a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link " href="#Play_to_Earn">Play to Earn</a>
+                            <a class="nav-link " href="#Play_to_Earn" data-panel="Play_to_Earn">Play to Earn</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link " href="#NFTs">NFTs</a>
+                            <a class="nav-link " href="#NFTs" data-panel="NFTs">NFTs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Blix_Token">BLIX Token</a>
+                            <a class="nav-link" href="#Blix_Token" data-panel="Blix_Token">BLIX Token</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Roadmap">Roadmap</a>
+                            <a class="nav-link" href="#Roadmap" data-panel="Roadmap">Roadmap</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#About">About</a>
+                            <a class="nav-link" href="#About" data-panel="About">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Parteners">Parteners</a>
+                            <a class="nav-link" href="#Parteners"  data-panel="Parteners">Parteners</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#FAQ">FAQ</a>
+                            <a class="nav-link" href="#FAQ" data-panel="FAQ">FAQ</a>
                         </li>
                         <!-- Menu lateral en pos horizontal -->
                         <li class="mt-5">
@@ -133,7 +166,7 @@
         <!--Contenedor de todas las secciones-->
 
         <!--seccion del video -->
-        <div class="container-fluid text-light text-center px-0 " id="Home">
+        <div class="container-fluid text-light text-center px-0 " id="Home" data-panel="Home">
             <div class="home-vi">
                 <video id="background-video-home" loop muted poster="src/img/home-bg.jpeg">
                     <!--autoplay -->
@@ -173,7 +206,7 @@
 
 
         <!-- Resto de secciones-->
-        <div class="container-fluid text-center" id="Play_to_Earn">
+        <div class="container-fluid text-center" id="Play_to_Earn" data-panel="Play_to_Earn">
             <div class="content_seccion">
                 <div class="row text-center">
                     <div class="col-12">
