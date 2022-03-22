@@ -50,12 +50,11 @@
           var panelName = e.target.getAttribute('data-panel')
           var panel = document.querySelector('section[data-panel="' + panelName + '"]');
           panelSnapInstance.snapToPanel(panel);
-          console.log(panel);
         }
       </script> 
 
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
@@ -88,7 +87,7 @@
                 </button>
                 <!--Menu -->
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="nav-pills navbar-nav mr-auto mt-2 mt-lg-0  justify-content-center mx-auto menuUl" id="">
+                    <ul class="nav-pills navbar-nav mr-auto mt-2 mt-lg-0  justify-content-center mx-auto menuUl">
                         <!-- mx-auto-->
                         <li class="nav-item">
                             <!-- tenia el active-->
@@ -132,13 +131,7 @@
                         </li>
 
                     </ul>
-                    <!--
-                    <ul class="navbar-nav nav-flex-icons">
-                        <li class="nav-item ">
-                            <a href="holaa" class="nav-link">Conect <i class="fa fa-wallet fa-2x ml-2"></i></a>
-                        </li>
-                    </ul> 
-                    -->
+            
                 </div><!-- collapse navbar-collapse, menu-->
 
             </div>
@@ -156,9 +149,6 @@
                 <li><a href="#"><img src="src/img/rrss/iconoYoutube512.svg" width="45px" /></a></li>
             </ul>
         </div>
-
-        <!-- <br><br><br><br>-->
-        <!-- bloque de espacio -->
 
     </div> <!-- container-fluid, barra de menu -->
 
@@ -676,9 +666,43 @@
     <!--</div>-->
     <!-- snap_container -->
     <script>
-        /*
-        menu = document.querySelector('.menuUl');
-        console.log(menu);*/
+        /*Incluir librerias de jquerry*/
+        $('.nav-item').click(function(){
+
+            var $target = $('div.navbar-collapse');
+            var $button = $("button.navbar-toggler");
+        
+            function test(){
+               
+                $target.removeClass("show");
+                /*$target.css("transition", "height 2s");*/
+            }
+            if($target.hasClass('show')){
+                $button.attr("aria-expanded", "false");
+                $button.addClass("collapsed");
+                
+                /*$target.removeClass("show");*/
+                setTimeout(test,350);
+                /*$target.css("transition", "height 1s");*/
+                /*$target.removeClass("collapse") 
+                $target.addClass("collapsing");
+
+                if($target.hasClass('collapsing') ){
+                    $target.removeClass("show");
+                    $target.removeClass("collapsing");
+                    $target.addClass("collapse");
+                } */
+               
+
+                /*$button.setAttribute("aria-expanded","false");*/
+                
+            }
+            /*$target.css("transition", "");*/
+
+        });
+
+       
+
     </script>
 
 
