@@ -136,16 +136,8 @@ h2 {
 }
 
 /*animar texto welcome*/
-#btns_superiores h1{
-    /*
-    text-shadow: 0px 0px 10px azure,
-                0px 0px 10px aqua,
-                0 0 40px dodgerblue,
-                0 0 80px blue;  */
-}
-.animate-char {
-   
 
+.animate-char {
     text-transform: uppercase;
     background-image: linear-gradient(-225deg,
             #0b9ba0 0%,
@@ -417,15 +409,26 @@ div.menu_lateral_h ul {
     border-radius: 24px;
     -webkit-box-shadow: 0 2px 5px #19748f;
 }
+#Play_to_Earn h3{
+
+    color: #5858FA;/*lightslategray;*/
+    text-shadow: 0px 0px 10px azure,
+                0px 0px 10px aqua,
+                0 0 40px dodgerblue,
+                0 0 80px blue;  
+}
 
 #Play_to_Earn h4{
+    color:#424242;
     margin:20px 0px 20px 0px;
 }
 #Play_to_Earn h5{
   font-size: 20px;
+  color:#424242;
 
 }
 #Play_to_Earn p{
+    color: #424242;
     margin-bottom: 6px;
     font-weight: normal;
     font-size: 16px;
