@@ -87,6 +87,105 @@
                 background-position: 200% center;
             }
         }
+        /*.blink {
+            animation: blink-animation 1s steps(5, start) infinite;
+            -webkit-animation: blink-animation 1s steps(5, start) infinite;
+        }
+        @keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
+        @-webkit-keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        } */
+        .blink {
+            -webkit-animation: blink 1s linear infinite;
+            -moz-animation: blink 1s linear infinite;
+            animation: blink 1s linear infinite;
+        }
+
+        @keyframes blink {  
+            0% { color: red; }
+            100% { color: black; }
+        }
+        @-webkit-keyframes blink {
+            0% { color: red; }
+            100% { color: black; }
+        }
+        .text {
+            /*height: 200px;*/
+            /*display: inline-block;*/
+            font-size: 100px;
+            /*line-height: 84%;*/
+            /*font-family: Modak;*/
+            padding-left: 7px;
+
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+
+            margin-top: calc(50vh - 100px);
+            text-shadow: 7px 7px 0px #d2d2d22e;
+            width: 300px;
+            /*border: 1px solid blue;*/
+        }
+        .text-1 {
+            background-image: url("fondoEstrellado.jpg");
+            background-size: 30%;
+        }
+
+        x-sign {
+        --interval: 1s;
+        display: block;
+        text-shadow: 
+            0 0 10px var(--color1),
+            0 0 20px var(--color2),
+            0 0 40px var(--color3),
+            0 0 80px var(--color4);
+        will-change: filter, color;
+        filter: saturate(60%);
+        animation: flicker steps(100) var(--interval) 1s infinite;
+
+        }
+        x-sign:nth-of-type(1) {
+            font-size: 100px;
+        color: yellow;
+        --color1: goldenrod;
+        --color2: orangered;
+        --color3: mediumblue;
+        --color4: purple;
+        font-family: Gruppo;
+        }
+        x-sign:nth-of-type(4) {
+            font-size: 100px;
+            color: lightyellow;
+            --color1: gold;
+            --color2: firebrick;
+            --color3: pink;
+            --color4: red;
+            font-family: Londrina Outline;
+        }
+        x-sign:nth-of-type(5) {
+            font-size: 100px;
+            color: azure;
+            --color1: azure;
+            --color2: aqua;
+            --color3: dodgerblue;
+            --color4: blue;
+            font-family: Sriracha;
+        }
+
+        h1{
+            color: azure;
+            text-shadow: 0px 0px 10px azure,
+                        0px 0px 10px aqua,
+                        0 0 40px dodgerblue,
+                        0 0 80px blue;
+
+        }
 
    </style> 
 
@@ -101,27 +200,51 @@
 
 <!-- __Animacion texto home__--> 
 
-<div class="container"> <!-- Estructura original-->
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <!--<h3 class="animate-charcter"> EKOSH</h3>>-->
-      </div>
-    </div>
-</div>
-<br>
-
 <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
         
-        <h1 class="animate-character">Wellcome to Blixieverse</h1>
+        <!--<h1 class="animate-character">Wellcome to Blixieverse</h1>-->
       
         </div>
     </div>
   </div>
 
+  <!--This is <span class="blink">blinking</span> text.-->
+  <div class="text text-1">HOLA</div>
 
+  <x-sign>
+    OPEN
+  </x-sign>
+  <x-sign>
+    Come back soon
+  </x-sign>
+  <x-sign>
+    PBR<br>in cans
+  </x-sign>
+  <x-sign>
+    REAL LIVE<br>Hot wings
+  </x-sign>
+  <x-sign>
+    <small>GARDEN PARK</small><br>MOTEL
+  </x-sign>
+  <x-sign>
+     Restrooms
+    <br><small>Yes&mdash;they are bad</small>
+  </x-sign>
+  <x-sign>
+    FREE RADIOS
+  </x-sign>
+  <x-sign>
+     WHO YOU GONNA CALL?
+  </x-sign>
+  <x-sign>
+    Karaoke Inside
+  </x-sign>
 
+  <h1> 
+    GARDEN PARK MOTEL 2
+  </h1>
 
     
 </body>
