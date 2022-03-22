@@ -254,7 +254,7 @@ div.menu_lateral_h ul {
 
     /*sec  Roadmap*/
     div.planets_container img {
-        width: 60vw;
+        width: 40vw/*60vw;*/
     }
 
     p.text_2022 {
@@ -439,6 +439,7 @@ div.menu_lateral_h ul {
     font-weight: normal;
     font-size: 16px;
 }
+
 
 /*Roadmap*/
 .planets_container {
