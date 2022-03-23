@@ -118,7 +118,7 @@
         .text {
             /*height: 200px;*/
             /*display: inline-block;*/
-            font-size: 100px;
+            font-size: 50px;
             /*line-height: 84%;*/
             /*font-family: Modak;*/
             padding-left: 7px;
@@ -127,7 +127,7 @@
             -webkit-background-clip: text;
             color: transparent;
 
-            margin-top: calc(50vh - 100px);
+            /*margin-top: calc(50vh - 100px);*/
             text-shadow: 7px 7px 0px #d2d2d22e;
             width: 300px;
             /*border: 1px solid blue;*/
@@ -141,9 +141,13 @@
             #a76ada 55%,
             #fff800 100%);
         }
+        .text-2{
+          background-image: url("fondoEstrellado.jpg");
+          background-size: 30%;
+        }
 
         x-sign {
-            font-size: 70px;
+            font-size: 50px;
         --interval: 1s;
         display: block;
         text-shadow: 
@@ -213,7 +217,56 @@
                         0 0 80px blue;
 
         }
+        .tuClase {
+          /*text-align: left; */
+          /*font-family: Arial Black; */
+          font-size: 50px;
+          font-weight: bold; 
+          color: #fff; 
+          text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+        }
+        .tuClase2 {
+          font-size: 50px;
+          /*text-align: left; */
+          font-family: Arial Black;
+          font-weight: bold; 
+          color: #fff; 
+          text-shadow: 0 1px 0 #ddd, 
+          0 2px 0 #ccc, 
+          0 3px 0 #bbb, 
+          0 4px 0 #aaa, 
+          0 5px 0 #acacac, 
+          0 6px 1px rgba(0,0,0,0.1), 
+          0 0 5px rgba(0,0,0,0.1), 
+          0 1px 3px rgba(0,0,0,0.3), 
+          0 3px 5px rgba(0,0,0,0.2), 
+          0 5px 10px rgba(0,0,0,0.25), 
+          0 10px 10px rgba(0,0,0,0.2), 
+          0 20px 20px rgba(0,0,0,0.15);
+        }
 
+        .tuClase3{
+        text-align: left; 
+        font-family: Comic Sans MS; 
+        font-weight:bold; 
+        font-size: 50px; 
+        color: #EBD758; 
+        text-shadow: -1px 0 #414D68, 
+        0 1px #414D68, 
+        1px 0 #414D68, 
+        0 -1px #414D68, 
+        -2px 2px 0 #414D68, 
+        2px 2px 0 #414D68, 
+        1px 1px #414D68, 
+        2px 2px #414D68, 
+        3px 3px #414D68, 
+        4px 4px #414D68, 
+        5px 5px #414D68, 
+        6px 6px #414D68, 
+        7px 7px #414D68, 
+        8px 8px #414D68, 
+        9px 9px #414D68;
+        }
    </style> 
 
 
@@ -239,13 +292,14 @@
 
   <!--This is <span class="blink">blinking</span> text.-->
   <div class="text text-1">HOLA</div>
+  <div class="text text-2">HOLA</div>
 
   <x-sign>
     OPEN
   </x-sign>
   <x-sign>
     Come back soon
-  </x-sign>
+  </x-sign> 
   <x-sign>
     PBR<br>in cans
   </x-sign>
@@ -262,9 +316,9 @@
   <x-sign>
     FREE RADIOS
   </x-sign>
-  <x-sign>
+ <x-sign>
      WHO YOU GONNA CALL?
-  </x-sign>
+  </x-sign> 
   <x-sign>
     Karaoke Inside
   </x-sign>
@@ -272,6 +326,12 @@
   <h1> 
     GARDEN PARK MOTEL 2
   </h1> -->
+
+    <!-- Efectos css-->
+  <p class="tuClase">Tu texto</p>
+  <p class="tuClase2">Tu texto</p>
+  <p class="tuClase3">Tu texto</p>
+
 
     
 </body>

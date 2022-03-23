@@ -75,7 +75,39 @@ let planet_ps= document.querySelectorAll(".planet_col p");
             col.classList.remove("d-flex");
         }); */
     }
- } 
+ }
+ 
+
+ //Panel snap
+ var menu, menuItems, panelSnapInstance;
+
+        document.addEventListener("DOMContentLoaded", function () {
+            menu = document.querySelector('.menuUl');
+            menuItems = menu.querySelectorAll('a');
+
+            panelSnapInstance = new PanelSnap();
+            panelSnapInstance.on('activatePanel', activateMenuItem);
+
+            menuItems.forEach(function (menuItem) {
+                menuItem.addEventListener('click', onButtonClick);
+            })
+        });
+
+        function activateMenuItem(panel) {
+            menuItems.forEach(function (menuItem) {
+                menuItem.classList.remove('active');
+            });
+
+            var panelName = panel.getAttribute('data-panel')
+            var menuItem = menu.querySelector('a[data-panel="' + panelName + '"]');
+            menuItem.classList.add('active');
+        }
+
+        function onButtonClick(e) {
+            var panelName = e.target.getAttribute('data-panel')
+            var panel = document.querySelector('section[data-panel="' + panelName + '"]');
+            panelSnapInstance.snapToPanel(panel);
+        }
 
 
 
