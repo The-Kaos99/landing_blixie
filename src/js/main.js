@@ -109,6 +109,15 @@ let planet_ps= document.querySelectorAll(".planet_col p");
             panelSnapInstance.snapToPanel(panel);
         }
 
+/*FAQ */
+let button = document.querySelector("#FAQ button");
+
+button.addEventListener("click",selected);
+
+function selected(){
+    alert("hola");
+}
+
 
 
 
