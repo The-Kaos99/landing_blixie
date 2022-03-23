@@ -53,6 +53,8 @@ h2 {
     background: rgba(0, 0, 0, 0);
     box-shadow: none;
     font-family: "Neuropolitical W00 Light";
+
+   
 }
 
 /*se añade al hacer scroll*/
@@ -74,13 +76,15 @@ h2 {
    /* -webkit-transition: height 2s; /* Safari */
     /*transition: height 2s; */
 }
-
-
-.sombra-text2 {
-    text-shadow: 2px 0 0 #000, -2px 0 0 #000,
-        0 2px 0 #000, 0 -2px 0 #000,
-        1px 1px #000, -1px -1px 0 #000,
-        1px -1px 0 #000, -1px 1px 0 #000;
+.nav-item{
+    text-shadow: 0px 0px 10px rgb(65, 235, 192),
+    0px 0px 10px aqua,
+    0 0 40px dodgerblue,
+    0 0 80px rgb(39, 39, 172),
+    0 0 90px blue;
+    filter: brightness(150%);
+}
+.active{ /*opcionmenu activo*/
 
 }
 
