@@ -110,13 +110,35 @@ let planet_ps= document.querySelectorAll(".planet_col p");
         }
 
 /*FAQ */
-let button = document.querySelector("#FAQ button");
 
-button.addEventListener("click",selected);
+const cardHeaders= document.querySelectorAll(".card-header");
 
-function selected(){
-    alert("hola");
-}
+cardHeaders.forEach(function(cardHeader){
+    //console.log(cardHeader);
+    const btn= cardHeader.querySelector("button");
+    //console.log(btn);
+    btn.addEventListener("click",function(){
+        cardHeaders.forEach(function(item){
+            if(item!== cardHeader){
+                item.classList.remove("selected");
+            }
+        });
+        cardHeader.classList.add("selected");
+    });
+}); 
+
+/*
+const btns = document.querySelectorAll("#FAQ button");
+
+//button.addEventListener("click",selected);
+btns.forEach(function(btn){
+    btn.addEventListener("click", function(e){
+        //console.log(e.currentTarget.parentElement.parentElement);
+        const carHeader = e.currentTarget.parentElement.parentElement;
+        //añadirle la clase de color
+    });
+}); */
+
 
 
 

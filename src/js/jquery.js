@@ -1,4 +1,5 @@
 /*Incluir librerias de jquerry*/
+/*menu */
 $('.nav-item').click(function(){
 
     var $target = $('div.navbar-collapse');
@@ -17,3 +18,9 @@ $('.nav-item').click(function(){
     }
 
 });
+
+/*FAQ */
+/*$('#buttonTest').on('show.bs.collapse', function () {
+    // do something…
+    alert("hello Luzz");
+}) */
