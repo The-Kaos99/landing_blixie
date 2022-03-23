@@ -333,12 +333,14 @@ div.menu_lateral_h ul {
 #Home {
     height: 100vh !important;
     border: red 5px dotted;
+    overflow-y: scroll;
 
 }
 
 #Play_to_Earn {
     height: 100vh !important;
     border: rgb(255, 187, 0) 5px dotted;
+    overflow-y: scroll;
 
 }
 
