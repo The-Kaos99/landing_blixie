@@ -89,7 +89,7 @@ h2 {
     0px 0px 30px #f580ff,
     0 0 60px #f580ff,
     0 0 100px #f580ff,
-    0 0 110px #f580ff !important;
+    0 0 110px #ca4990 !important;
 
 
 
@@ -162,10 +162,12 @@ h2 {
 .animate-char {
     text-transform: uppercase;
     background-image: linear-gradient(-225deg,
-            #0b9ba0 0%,
-            #8364cc 29%,
-            #ff1361 67%,
-            #fff800 100%);
+            #f580ff 0%,
+            #9b749b 20%,
+            dodgerblue 55%,
+            rgb(84, 84, 175) 80%,
+            #f580ff 100%);
+            
 
     background-size: auto auto;
 
@@ -177,7 +179,7 @@ h2 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    animation: textclip 2s linear infinite;
+    animation: textclip 2s linear 2;/*infinite;*/
     /*animation-iteration-count: 4;*/
     /*or infinite*/
     animation-delay: 1.8s;
@@ -301,13 +303,15 @@ div.menu_lateral_h ul {
         font-size: 35px;
         padding-bottom: 30px;
     }
-
+    div.planets_container div:nth-child(9){
+        text-align: center;
+    }
     .text_Metaverse {
 
-        right: 16% !important;
+        /*right: 16% !important;
         /*20vw !important;*/
-        top: 10vh !important;
-        font-size: 50px !important;
+        /*top: 10vh !important;*/
+        font-size: 50px !important; 
         /*padding-left: 18%;*/
     }
 
@@ -478,7 +482,6 @@ div.menu_lateral_h ul {
     /*para contenedor de ref de las pos absolutas de sus hijos*/
     color: #F781F3;
 }
-
 .margin1 {
 
     margin-top: 25vh;
@@ -487,12 +490,12 @@ div.menu_lateral_h ul {
 
 .margin2 {
 
-    margin-top: 20vh;
+    margin-top: 24vh;
 }
 
 .margin3 {
 
-    margin-top: 15vh;
+    margin-top: 12vh;
 }
 
 .margin4 {
@@ -528,17 +531,20 @@ div.menu_lateral_h ul {
     font-size: 25px;
     font-weight: bold;
 }
+.planets_container div:nth-child(9){
+    text-align: right;
+}
 
 .text_Metaverse {
-    position: absolute;
+    /*position: absolute;
     right: 20vw;
-    top: 45vh;
+    top: 45vh;*/
     font-size: 30px;
     font-weight: bold;
 }
 
 .planet_col b {
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 /*NFTs*/
