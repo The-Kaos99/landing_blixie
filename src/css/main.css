@@ -474,6 +474,11 @@ div.menu_lateral_h ul {
     font-size: 16px;
 }
 
+#pills-tab .active{
+    background-color: transparent !important;
+    border: 1px solid #5858FA !important;
+    color: #5858FA !important; 
+}
 
 /*Roadmap*/
 .planets_container {
