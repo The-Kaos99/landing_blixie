@@ -272,6 +272,10 @@ div.menu_lateral_h ul {
     h2 {
         font-size: 26px !important;
     }
+    /*Play to earn*/
+    iframe {
+        width: 100%;
+    }
 
 
     /*sec 3  NFts*/
