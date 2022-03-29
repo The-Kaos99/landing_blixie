@@ -360,7 +360,7 @@ div.menu_lateral_h ul {
     height: 100vh !important;
     border: rgb(255, 187, 0) 5px dotted;
     overflow-y: scroll;
-    background-image:url(/src/img/bac.jpeg);
+    background-image:url(../img/bac.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 
