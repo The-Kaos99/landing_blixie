@@ -363,7 +363,6 @@ div.menu_lateral_h ul {
     background-image:url(../img/bac.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 #NFTs {
@@ -457,36 +456,56 @@ div.menu_lateral_h ul {
 }
 
 #Play_to_Earn h3{
-    
-    color: #5858FA;/*lightslategray;*/
+    color:#000000;
+    /*color: #5858FA;/*lightslategray;
     text-shadow: 0px 0px 10px azure,
                 0px 0px 10px aqua,
                 0 0 40px dodgerblue,
-                0 0 80px blue;  
+                0 0 80px blue; 
+    */
 }
 
 #Play_to_Earn h4{
-    color:#424242;
+    color:#000000;
     margin:20px 0px 20px 0px;
 }
 #Play_to_Earn h5{
   font-size: 20px;
-  color:#424242;
+  color:#000000;
 
 }
 #Play_to_Earn p{
-    color: #424242;
-    margin-bottom: 6px;
+    color: #000000;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 20px;
 }
-
 #pills-tab .active{
     background-color: transparent !important;
-    border: 1px solid #5858FA !important;
-    color: #5858FA !important; 
+    color: #5dbbc7 !important; 
+}
+.sombra-text {
+
+text-shadow: 2px 0 0 #000, 
+            -2px 0 0 #000, 
+            0 2px 0 #000, 
+            0 -2px 0 #000, 
+            1px 1px #000, 
+            -1px -1px 0 #000, 
+            1px -1px 0 #000, 
+            -1px 1px 0 #000;
+  
 }
 
+.neon_rosa{
+    /*
+    text-shadow: 0px 0px 20px #ffffff,
+    0px 0px 30px #f580ff,
+    0 0 60px #f580ff,
+    0 0 100px #e0d9e0,
+    0 0 110px #ca4990 !important;*/
+    text-shadow: 0px 0px 20px #ffffff,
+                0px 0px 30px #ffffff;
+}
 /*Roadmap*/
 .planets_container {
     font-size: 18px;

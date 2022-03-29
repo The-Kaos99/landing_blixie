@@ -7,6 +7,9 @@ let planet_cols= document.querySelectorAll(".planet_col");/*añadirles clase*/
 let planet_imgs= document.querySelectorAll(".planet_col img");
 let planet_ps= document.querySelectorAll(".planet_col p");
 
+let h3Animado= document.querySelector("#pills-tabContent h3");
+let pAnimado= document.querySelector("#pills-tabContent p");
+
  //por defecto, tiene que efectuarse una vez al cargarse la página. podría llamarlo justo al cargar
  if(window.innerWidth<575){  //Para version movil
      //caja.innerHTML=menuLH;
@@ -30,6 +33,13 @@ let planet_ps= document.querySelectorAll(".planet_col p");
         p.removeAttribute("data-aos");
         p.removeAttribute("data-aos-delay");
     });
+    /*quitar animacion para play to earn */
+    h3Animado.removeAttribute("data-aos");
+    h3Animado.removeAttribute("data-aos-duration");
+    h3Animado.removeAttribute("data-aos-delay");
+    pAnimado.removeAttribute("data-aos");
+    pAnimado.removeAttribute("data-aos-duration");
+    pAnimado.removeAttribute("data-aos-delay");
 
  }
  else{
