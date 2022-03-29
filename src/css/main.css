@@ -360,7 +360,7 @@ div.menu_lateral_h ul {
     height: 100vh !important;
     border: rgb(255, 187, 0) 5px dotted;
     overflow-y: scroll;
-    background-image:url(../img/bac.jpeg);
+    background-image:url("../img/bac.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -369,12 +369,16 @@ div.menu_lateral_h ul {
     height: 100vh !important;
     border: rgb(0, 4, 255) 5px dotted;
     overflow: scroll;
+    
 
 }
 
 #Blix_Token {
     height: 100vh !important;
     border: rgb(21, 255, 0) 5px dotted;
+    background-image:url("../img/back-nft.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #Roadmap {
