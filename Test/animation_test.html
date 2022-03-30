@@ -4,12 +4,17 @@
     <meta charset="utf-8" />
     <title> Animtation</title>
 
-   <style>
+  <style>
+    @font-face {
+      font-family: "Neuropolitical W00 Light";
+      src: url("../src/font/Neuropolitical-374143/Neuropolitical W00 Light.ttf");
+
+    }
+
        .ojo{
            height:150px;
            width: 150px; /*2550 px totales*/
             background: url("BOMBAmulti5horizontal.png");/*orange;*/
-            
             /*background-position: 0px 0; */
             animation: cambiar 2s steps(17);/*infinite;*/
             border-top-style: red;
@@ -18,12 +23,8 @@
             height:150px;
             width: 150px; /*2550 px totales*/
             background-image: url("BOMBAmulti5horizontal.png");/*orange;*/
-            
-            /*background-position: 0px 0; */
+        
             animation: cambiar 2s steps(17);
-            /*border-style: hidden;*/
-            /*border: 1px solid red;*/
-           
             border-top: red;
             background-color: white;
 
@@ -57,48 +58,416 @@
             }
        }
 
-       #character_container {
-            border: 1px solid grey;
-            width:120px;
-            
+       /*subtitulo home*/
+       
+       .animate-character{
+            text-transform: uppercase;
+            background-image: linear-gradient(
+                -225deg,
+                #231557 0%,
+                #44107a 29%,
+                #ff1361 67%,
+                #fff800 100%
+            );
+
+            background-size: auto auto;
+            /*background-clip, especifica hasta donde se extiende el fondo ( background ) 
+            de un elemento, ya sea color o imagen. Por defecto el fondo 
+            ( background ) se extiende hasta el limite externo del borde*/
+            background-clip: border-box;/*se extiende hasta el limite externo del borde.*/
+            background-size: 200% auto;/*alarga la largura del ancho del fondo, se ven menos colores del gradiente*/
+            color: #fff;
+            background-clip: text;/*permite que una imagen de fondo sea recortada por un elemento de texto.*/
+            text-fill-color: transparent;
+            -webkit-background-clip: text; /*creo...para distintos navegadores con webkit*/
+            -webkit-text-fill-color: transparent;
+
+            animation: textclip 2s linear;/*infinite*/
+            display: inline-block; /*para que?*/
+            /*font-size: 100px;*/
+            /*background-position: 0% center;*/
+        } 
+        
+        @keyframes textclip {
+            to {
+                background-position: 200% center;
+            }
+        }
+        /*.blink {
+            animation: blink-animation 1s steps(5, start) infinite;
+            -webkit-animation: blink-animation 1s steps(5, start) infinite;
+        }
+        @keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
+        @-webkit-keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        } */
+        .blink {
+            -webkit-animation: blink 1s linear infinite;
+            -moz-animation: blink 1s linear infinite;
+            animation: blink 1s linear infinite;
         }
 
-        #character_container div.char{
-            border: 1px solid blue;
-            width: 30px;/*10vw;*/
-            height: 30px;/*10vh;*/
-
-            /*background-color: grey;*/
-            margin-bottom: 10px;
+        @keyframes blink {  
+            0% { color: red; }
+            100% { color: black; }
         }
-        .recuadro{
-            border: 1px solid green;
-            float: left;
+        @-webkit-keyframes blink {
+            0% { color: red; }
+            100% { color: black; }
+        }
+        .text {
+            /*height: 200px;*/
+            /*display: inline-block;*/
+            font-size: 40px;
+            /*line-height: 84%;*/
+            /*font-family: Modak;*/
+            padding-left: 7px;
+
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+
+            /*margin-top: calc(50vh - 100px);*/
+            text-shadow: 7px 7px 0px #d2d2d22e;
             width: 300px;
-            height: 200px;
+            /*border: 1px solid blue;*/
         }
+        .text-1 {
+           /* background-image: url("fondoEstrellado.jpg");*/
+            /*background-size: 30%;*/
+            background-image: linear-gradient(-225deg,
+            #0b9ba0 0%,
+            #11478f 19%,
+            #a76ada 30%,
+            #fff800 100%);
+        }
+        .text-2{
+          background-image: url("fondoEstrellado.jpg");
+          background-size: 30%;
+        }
+
+        x-sign {
+            font-size: 40px;
+        --interval: 1s;
+        display: block;
+        text-shadow: 
+            0 0 10px var(--color1),
+            0 0 20px var(--color2),
+            0 0 40px var(--color3),
+            0 0 80px var(--color4);
+        will-change: filter, color;
+        filter: saturate(60%);
+        animation: flicker steps(100) var(--interval) 1s;
+
+        }
+        x-sign:nth-of-type(1) {
+            
+        color: yellow;
+        --color1: goldenrod;
+        --color2: orangered;
+        --color3: mediumblue;
+        --color4: purple;
+        font-family: Gruppo;
+        }
+        x-sign:nth-of-type(3) {
+        color: lightyellow;
+        --color1: yellow;
+        --color2: lime;
+        --color3: green;
+        --color4: mediumblue;
+        font-family: Kumar One Outline;
+        }
+        x-sign:nth-of-type(4) {
+            
+            color: lightyellow;
+            --color1: gold;
+            --color2: firebrick;
+            --color3: pink;
+            --color4: red;
+            font-family: Londrina Outline;
+        }
+        x-sign:nth-of-type(5) {
+            
+            color: azure;
+            --color1: azure;
+            --color2: aqua;
+            --color3: dodgerblue;
+            --color4: blue;
+            font-family: Sriracha;
+        }
+        
+        x-sign:nth-of-type(8) {
+          background-color: black;
+        color: yellow;
+        --color1: yellow;
+        --color2: lime;
+        --color3: green;
+        --color4: darkgreen;
+        font-family: Monoton;
+        }
+        @keyframes flicker {
+        50% {
+            color: white;
+            filter: saturate(200%) hue-rotate(20deg);
+        }
+        }
+        h1{
+            color: azure;
+            text-shadow: 0px 0px 10px azure,
+                        0px 0px 10px aqua,
+                        0 0 40px dodgerblue,
+                        0 0 80px blue;
+
+        }
+        .tuClase {
+          /*text-align: left; */
+          /*font-family: Arial Black; */
+          font-size: 50px;
+          font-weight: bold; 
+          color: #fff; 
+          text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+        }
+        .tuClase2 {
+          font-size: 50px;
+          /*text-align: left; */
+          font-family: Arial Black;
+          font-weight: bold; 
+          color: #fff; 
+          text-shadow: 0 1px 0 #ddd, 
+          0 2px 0 #ccc, 
+          0 3px 0 #bbb, 
+          0 4px 0 #aaa, 
+          0 5px 0 #acacac, 
+          0 6px 1px rgba(0,0,0,0.1), 
+          0 0 5px rgba(0,0,0,0.1), 
+          0 1px 3px rgba(0,0,0,0.3), 
+          0 3px 5px rgba(0,0,0,0.2), 
+          0 5px 10px rgba(0,0,0,0.25), 
+          0 10px 10px rgba(0,0,0,0.2), 
+          0 20px 20px rgba(0,0,0,0.15);
+        }
+
+        .tuClase3{
+        text-align: left; 
+        font-family: Comic Sans MS; 
+        font-weight:bold; 
+        font-size: 50px; 
+        color: #EBD758; 
+        text-shadow: -1px 0 #414D68, 
+        0 1px #414D68, 
+        1px 0 #414D68, 
+        0 -1px #414D68, 
+        -2px 2px 0 #414D68, 
+        2px 2px 0 #414D68, 
+        1px 1px #414D68, 
+        2px 2px #414D68, 
+        3px 3px #414D68, 
+        4px 4px #414D68, 
+        5px 5px #414D68, 
+        6px 6px #414D68, 
+        7px 7px #414D68, 
+        8px 8px #414D68, 
+        9px 9px #414D68;
+        }
+        .tuClase4{
+            color: #C8F351;
+            width: 400px;
+            background-color:darkgray;
+            
+            font: normal bold 35px Arial;
+            
+            text-shadow:0px 1px 0px rgba(0,0,125,0.2), 
+                        0px 2px 0px rgba(0,0,125,0.4), 
+                        0px 3px 0px rgba(0,0,125,0.6), 
+                        0px 4px 0px rgba(0,0,125,0.8), 
+                        0px 5px 0px rgb(0,0,0,1),  
+                        0px 9px 5px rgba(0,0,0,1);
+        }
+        .tuClase5{
+            color: white;
+            width: 400px;
+            background-color: darkslateblue;
+            
+            font: normal bold 35px Arial;
+            /* el 5px es para marcar el contorno, el de 8px para el difuminado*/
+            text-shadow:1px 1px 0px rgba(59,61,58,0.2),
+                        2px 2px 0px rgba(59,61,58,0.4), 
+                        3px 3px 0px rgba(59,61,58,0.6), 
+                        4px 4px 0px rgba(59,61,58,0.8), 
+                        5px 5px 0px rgb(0,0,0,0.9), 
+                        8px 8px 5px rgba(0,0,0,1);
+        }
+        .tuClase6{
+            font-size: 40px;
+            width: 500px;
+            color:bisque;
+            font: normal bold 30px Georgia;
+            /*background-color: black;*/
+            text-shadow: 1px 1px 2px black, 0px 0px 11px rgba(249,50,10,1);
+            
+            /* Colocar más de una sombra
+            text-shadow: 1px 1px 2px black,0 0 1em blue, 0 0 0.2em blue; */
+        }
+        .tuClase7 {text-align: left; 
+          font-size: 40px;
+          font-family: Arial; 
+          font-size: 30px; 
+          COLOR: #1278BF; 
+          text-shadow: 0px 0px 9px #508AD3;
+        }
+        .tuClase8 {
+          font-size: 40px;
+          text-align: left; 
+          font-family: Arial Black; 
+          font-weight: bold; font-size: 30px; 
+          background: #202020; 
+          -webkit-background-clip: text; 
+          -moz-background-clip: text; 
+          background-clip: text; 
+          color: transparent; 
+          text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
+        }
+
+        .texto{
+          font-family: "Neuropolitical W00 Light";
+          padding: 20px;
+          font-size: 40px;
+          background-color: #5a0f69;
+          color: #6fe1e9;/*lightslategray;*/
+
+          text-shadow: 0px 0px 10px rgb(65, 235, 192),
+                0px 0px 10px aqua,
+                0 0 40px dodgerblue,
+                0 0 80px rgb(39, 39, 172),
+                0 0 90px blue;
+
+        }
+
+        /*
+        .bg-4{
+        background: linear-gradient(to right, rgb(240, 152, 25), rgb(237, 222, 93));
+
+        }
+
+        .t-stroke {
+            color: transparent;
+
+            -moz-text-stroke-width: 2px;
+
+            -webkit-text-stroke-width: 2px;
+
+            -moz-text-stroke-color: #000000;
+
+            -webkit-text-stroke-color: #ffffff;
+
+        }
+        .t-shadow-halftone2 {
+            position: relative;
+        }
+        .t-shadow-halftone2::after {
+            content: "AWESOME TEXT";
+            font-size: 10rem;
+            letter-spacing: 0px;
+            background-size: 100%;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -moz-text-stroke-width: 0;
+            -webkit-text-stroke-width: 0;
+            position: absolute;
+            text-align: center;
+            left: 0px;
+            right: 0;
+            top: 0px;
+            z-index: -1;
+            background-color: #ff4c00;
+            transition: all 0.5s ease;
+            text-shadow: 10px 2px #6ac7c2;
+        } */
+
    </style> 
 
 
 </head>
 <body>
-    
-    <div class="ojo" ></div>
-    <img class="ojo2"></img>
-    <img class="ojo3"></img>
-    <span class="ojo4"></span>
+<!--___Animacion de un sprite___ -->
 
-    <div class="recuadro" ></div>
-        <div id="character_container" >
-            <div class="char" id="img0"></div>
-            <div class="char" id="img1"></div>
-            <div class="char" id="img2"></div>
-            <div class="char" id="img3"></div>
-            <!--<img class="character" id="img0" src="src/img/per_sonic.png" />-->
-            <!--<img class="character" id="img1" src="src/img/per_crash.png" />
-            <img class="character" id="img2" src="src/img/per_yoshi.png" />
-            <img class="character" id="img3" src="src/img/per_sonic.png" /> -->
+   <!-- <div class="ojo" ></div>
+    <img class="ojo2"></img>
+    <span class="ojo4"></span> -->
+
+<!-- __Animacion texto home__--> 
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        
+        <!--<h1 class="animate-character">Wellcome to Blixieverse</h1>-->
+      
         </div>
     </div>
+  </div>
+
+  <!--This is <span class="blink">blinking</span> text.-->
+  <div class="text text-1">HOLA</div>
+  <div class="text text-2">HOLA</div>
+
+  <x-sign>
+    OPEN
+  </x-sign>
+  <x-sign>
+    Come back soon
+  </x-sign> 
+  <x-sign>
+    PBR<br>in cans
+  </x-sign>
+  <x-sign>
+    REAL LIVE<br>Hot wings
+  </x-sign>
+  <x-sign>
+    <small>GARDEN PARK</small><br>MOTEL
+  </x-sign>
+  <x-sign>
+     Restrooms
+    <br><small>Yes&mdash;they are bad</small>
+  </x-sign>
+  <x-sign>
+    FREE RADIOS
+  </x-sign>
+ <x-sign>
+     WHO YOU GONNA CALL?
+  </x-sign> 
+  <x-sign>
+    Karaoke Inside
+  </x-sign>
+<!--
+  <h1> 
+    GARDEN PARK MOTEL 2
+  </h1> -->
+
+    <!-- Efectos css-->
+  <p class="tuClase">Tu texto</p>
+  <p class="tuClase2">Tu texto</p>
+  <p class="tuClase3">Tu texto</p>
+  <p class="tuClase4">Tu texto</p>
+  <p class="tuClase5">Tu texto</p>
+  <p class="tuClase6">Tu texto</p>
+  <p class="tuClase7">Tu texto</p>
+  <p class="tuClase8">Tu texto</p>
+
+  <p class="texto">WE ARE BLIXIES YOUR ETHERIC GUIDES IN THE</p>
+  <!--
+  <div class="bg-4">
+    <h1 class="t-stroke t-shadow-halftone2">AWESOME TEXT</h1>
+  </div> -->
+    
+    
 </body>
 </html>
