@@ -590,16 +590,17 @@ text-shadow: 2px 0 0 #000,
     font-weight: bold;
 }
 /*horizontal scroll*/
-.container{    
+.hScroll_container{    
     display:flex;
     justify-content: center;
     align-items: center;
     /*background-color:antiquewhite;*/
     height: 73vh;  
+
 }
 .horizontal-scroll{
     width: 80vw;/*700px;*/
-    height: 420px;/*250px;/*80px;*/
+    height: 430px;/*250px;/*80px;*/
     /*background-color: lightgreen;*/
     /*border: 1px solid grey;*/
     border-radius: 5px;
@@ -626,7 +627,6 @@ text-shadow: 2px 0 0 #000,
 
 .storys-container{
     /*border: 1px solid orangered;*/
-
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -636,9 +636,12 @@ text-shadow: 2px 0 0 #000,
     left: 0;
     transition: 0.5s all ease-out;
 }
+.storys-container p{
+    margin-top: 10px;
+}
 .story-circle{
     /* background-color: linear-gradient(rgba(231,0,231),rgba(255,115,231));*/
-    /*background-color: aqua;*/
+    /*background-color: rgb(151, 137, 137);*/
     width: 240px;/*60px;*/
     height: 410px;/*60px;*/
     margin: 15px 10px;
@@ -649,16 +652,14 @@ text-shadow: 2px 0 0 #000,
 }
 .story-circle img{
     
-    width: 100%;/*52*/
-    /*height: 52px;*/
+    width: 100%;
     border-radius: 10%;/*50%*/
-    /*border: 2px solid #fff;*/
+    /*border: 2px solid rgb(255, 255, 255);*/
 }
 
 /*Seccion_About*/
 
 /*FAQ*/
-
 .accordion{
     box-shadow: 0px 0px 10px rgba(71, 71, 95, 0.7);
 }
