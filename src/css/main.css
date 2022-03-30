@@ -382,7 +382,7 @@ div.menu_lateral_h ul {
 
 #NFTs {
     height: 100vh !important;
-   /* border: rgb(0, 4, 255) 5px dotted;*/
+    /* border: rgb(0, 4, 255) 5px dotted;*/
     overflow: scroll;
 
 
@@ -404,7 +404,7 @@ div.menu_lateral_h ul {
     height: 100vh !important;
 
 
-   /* border: rgb(38, 0, 255) 5px dotted;*/
+    /* border: rgb(38, 0, 255) 5px dotted;*/
 
 
     /* Para dejar la imagen de fondo centrada, vertical y horizontalmente*/
@@ -433,7 +433,7 @@ div.menu_lateral_h ul {
 
 #Parteners {
     height: 100vh !important;
-   /* border: rgb(0, 68, 255) 5px dotted;*/
+    /* border: rgb(0, 68, 255) 5px dotted;*/
     overflow-y: scroll;
 }
 
@@ -547,8 +547,8 @@ div.menu_lateral_h ul {
 }
 
 
-    margin-top: 25vh;
-    position: relative;
+margin-top: 25vh;
+position: relative;
 }
 
 .margin2 {
