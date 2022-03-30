@@ -150,7 +150,7 @@ btns.forEach(function(btn){
 
 /*__NFTs */
 let currentScrollPosition = 0;
-let scrollAmount = 220;//320//cantidad de desplazamiento
+let scrollAmount = 230;//320//cantidad de desplazamiento
 
 const sCont = document.querySelector(".storys-container");//contenedor de imgs
 const hScroll = document.querySelector(".horizontal-scroll");
