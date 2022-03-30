@@ -363,26 +363,21 @@ div.menu_lateral_h ul {
 
 #Home {
     height: 100vh !important;
-
-    border: red 5px dotted;
     overflow-y: scroll;
-
 
 }
 
 #Play_to_Earn {
     height: 100vh !important;
-    border: rgb(255, 187, 0) 5px dotted;
     overflow-y: scroll;
     background-image: url("../img/bac.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 #NFTs {
     height: 100vh !important;
-   /* border: rgb(0, 4, 255) 5px dotted;*/
+    border: rgb(0, 4, 255) 5px dotted;
     overflow: scroll;
 
 
@@ -390,11 +385,9 @@ div.menu_lateral_h ul {
 
 #Blix_Token {
     height: 100vh !important;
-    border: rgb(21, 255, 0) 5px dotted;
     background-image: url("../img/back-nft.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 #Roadmap {
@@ -402,11 +395,6 @@ div.menu_lateral_h ul {
         url("../img/roadmap/estrellas.png"),
         url("../img/roadmap/background.png");
     height: 100vh !important;
-
-
-   /* border: rgb(38, 0, 255) 5px dotted;*/
-
-
     /* Para dejar la imagen de fondo centrada, vertical y horizontalmente*/
     background-position: center center;
 
@@ -427,26 +415,22 @@ div.menu_lateral_h ul {
 
 #About {
     height: 100vh !important;
-    /*border: rgb(255, 0, 0) 5px dotted;*/
     overflow-y: scroll;
 }
 
 #Parteners {
     height: 100vh !important;
-   /* border: rgb(0, 68, 255) 5px dotted;*/
     overflow-y: scroll;
 }
 
 #FAQ {
     height: 100vh !important;
-
-    border: rgb(255, 179, 0) 5px dotted;
     overflow-y: scroll;
 }
 
 .content_seccion {
     /* Estable el margen poara que el menu nop se coma parte de las secciones */
-    margin-top: 10vh !important;
+    margin-top: 10vh;
 }
 
 
@@ -495,7 +479,6 @@ div.menu_lateral_h ul {
     color: #000000;
     margin: 20px 0px 20px 0px;
 }
-
 
 #Play_to_Earn h5 {
     font-size: 20px;
@@ -546,6 +529,7 @@ div.menu_lateral_h ul {
     color: #F781F3;
 }
 
+.margin1 {
 
     margin-top: 25vh;
     position: relative;
