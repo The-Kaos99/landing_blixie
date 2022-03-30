@@ -187,6 +187,37 @@ function scrollHorizontally(val) {
     sCont.style.left = currentScrollPosition + "px";
 }
 
+/*scroll horizontal 2 */
+const sCont_2 = document.querySelector(".storys-container_2");//contenedor de imgs
+
+const btnScrollLeft_2 = document.querySelector("#btn-scroll-left_2");
+const btnScrollRight_2 = document.querySelector("#btn-scroll-right_2");
+
+btnScrollLeft_2.style.opacity = "0";
+let maxScroll_2 = -sCont_2.offsetWidth + hScroll.offsetWidth;
+
+function scrollHorizontally_2(val){
+    currentScrollPosition += (val * scrollAmount);
+
+    if (currentScrollPosition >= 0) {
+        currentScrollPosition = 0
+
+        btnScrollLeft_2.style.opacity = "0";
+    } else {
+        btnScrollLeft_2.style.opacity = "1";
+    }
+
+    if (currentScrollPosition <= maxScroll_2) {
+        currentScrollPosition = maxScroll_2;
+
+        btnScrollRight_2.style.opacity = "0";
+    } else {
+        btnScrollRight_2.style.opacity = "10";
+    }
+
+    //hace que se desplace
+    sCont_2.style.left = currentScrollPosition + "px";
+} 
 
 
 
