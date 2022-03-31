@@ -194,8 +194,6 @@ const sCont_2 = document.querySelector(".storys-container_2");//contenedor de im
 
 const btnScrollLeft_2 = document.querySelector("#btn-scroll-left_2");
 const btnScrollRight_2 = document.querySelector("#btn-scroll-right_2");
-//console.log("narnaja: "+sCont_2.offsetWidth);
-//console.log("sec: "+sCont_2.offsetWidth/25);
 
 btnScrollLeft_2.style.opacity = "0";
 
