@@ -150,11 +150,10 @@ btns.forEach(function(btn){
 
 /*__NFTs */
 let currentScrollPosition = 0;
-let scrollAmount = 230;//320//cantidad de desplazamiento
+let scrollAmount = 262.18;//262.18;//230;//320//cantidad de desplazamiento. Para pantallas grandes bien, movil no
 
 const sCont = document.querySelector(".storys-container");//contenedor de imgs
-const hScroll = document.querySelector(".horizontal-scroll");
-//contiene a botones y storys-container
+const hScroll = document.querySelector(".horizontal-scroll");//contiene a botones y storys-container
 
 const btnScrollLeft = document.querySelector("#btn-scroll-left");
 const btnScrollRight = document.querySelector("#btn-scroll-right");
@@ -188,27 +187,33 @@ function scrollHorizontally(val) {
 }
 
 /*scroll horizontal 2 */
+let currentScrollPosition_2 = 0;
+let scrollAmount_2 = 220.08;
+
 const sCont_2 = document.querySelector(".storys-container_2");//contenedor de imgs
 
 const btnScrollLeft_2 = document.querySelector("#btn-scroll-left_2");
 const btnScrollRight_2 = document.querySelector("#btn-scroll-right_2");
+//console.log("narnaja: "+sCont_2.offsetWidth);
+//console.log("sec: "+sCont_2.offsetWidth/25);
 
 btnScrollLeft_2.style.opacity = "0";
+
 let maxScroll_2 = -sCont_2.offsetWidth + hScroll.offsetWidth;
 
 function scrollHorizontally_2(val){
-    currentScrollPosition += (val * scrollAmount);
+    currentScrollPosition_2 += (val * scrollAmount_2);
 
-    if (currentScrollPosition >= 0) {
-        currentScrollPosition = 0
+    if (currentScrollPosition_2 >= 0) {
+        currentScrollPosition_2 = 0
 
         btnScrollLeft_2.style.opacity = "0";
     } else {
         btnScrollLeft_2.style.opacity = "1";
     }
 
-    if (currentScrollPosition <= maxScroll_2) {
-        currentScrollPosition = maxScroll_2;
+    if (currentScrollPosition_2 <= maxScroll_2) {
+        currentScrollPosition_2 = maxScroll_2;
 
         btnScrollRight_2.style.opacity = "0";
     } else {
@@ -216,7 +221,7 @@ function scrollHorizontally_2(val){
     }
 
     //hace que se desplace
-    sCont_2.style.left = currentScrollPosition + "px";
+    sCont_2.style.left = currentScrollPosition_2 + "px";
 } 
 
 

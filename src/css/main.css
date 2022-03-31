@@ -667,7 +667,7 @@ div.menu_lateral_h ul {
 
     position: absolute;
     left: 0;
-    transition: 0.5s all ease-out;
+    transition: 0.5s all ease-out;/*all*/
 }
 
 .storys-container p {
